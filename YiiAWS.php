@@ -9,6 +9,7 @@
  * @copyright Copyright &copy; Marc Teichtahl 2013-
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  * @version 1.0.0
+ * @see http://docs.aws.amazon.com/aws-sdk-php-2/latest/
  * 
  * @package YiiAMQP
  **/
