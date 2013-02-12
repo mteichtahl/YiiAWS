@@ -12,7 +12,7 @@
  * 
  * @package YiiAMQP
  */
-//require 'AWSSDKforPHP/aws.phar';
+require 'aws.phar';
 //use Aws\Common\Enum\Region;
 //use Aws\S3\S3Client as S3ClientV2;
 
@@ -43,7 +43,7 @@ class YiiAWS extends CApplicationComponent {
             'region' => $this->region
         );
 
-//        $this->aws = Aws\S3\S3Client::factory($config);
+        $this->aws = Aws\S3\S3Client::factory($config);
 //
 //        $result = $this->aws->listBuckets();
 //
