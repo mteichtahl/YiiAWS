@@ -36,7 +36,7 @@ class YiiAWS extends CApplicationComponent {
     protected $aws = NULL;
     protected $config = array();
 
-    public function test() {
+    public function init() {
         $this->config = array(
             'key' => $this->key,
             'secret' => $this->secret,
