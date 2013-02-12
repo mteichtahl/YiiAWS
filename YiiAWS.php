@@ -37,13 +37,7 @@ class YiiAWS extends CApplicationComponent {
     public $region;
     
     protected $aws = NULL;
-    
-    function __construct() {
-        
-        
-            echo 'fff';
-        
-    }
+    protected $config = array();
     
     public function  test()
     {
