@@ -45,7 +45,11 @@ class YiiAWS extends CApplicationComponent {
 
         $this->aws = Aws\S3\S3Client::factory($this->config);
         
-        print_r($this->aws);
+        // Check that the factory created our object
+        if (get_class($this->aws)=='Aws\S3\S3Client')
+        {
+            echo 'got it';
+        }
         
     }
 
