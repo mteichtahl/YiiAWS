@@ -39,7 +39,7 @@ class YiiAWS extends CApplicationComponent {
     protected $aws = NULL;
     
     function __construct() {
-        $this->aws = S3ClientV2::factory($config);;
+        $this->aws = S3Client::factory($config);;
     }
     
     public function  test()
