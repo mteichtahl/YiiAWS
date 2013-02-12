@@ -13,7 +13,7 @@
  * @package YiiAMQP
  */
 
-require 'AWSSDKforPHP/aws.phar';
+//require 'AWSSDKforPHP/aws.phar';
 use Aws\Common\Enum\Region;
 use Aws\S3\S3Client as S3ClientV2;
 //Yii::app()->autoloader->getAutoloader()->addNamespace('PhpAmqpLib\Connection', __DIR__ . '/PhpAmqpLib/Connection');
@@ -31,6 +31,11 @@ use Aws\S3\S3Client as S3ClientV2;
  */
 class YiiAWS extends CApplicationComponent {
 
+    public function  test()
+    {
+        
+        echo '4444';
+    }
  
     
 }
