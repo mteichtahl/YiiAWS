@@ -40,8 +40,7 @@ class YiiAWS extends CApplicationComponent {
     
     function __construct() {
         
-        echo __DIR__ . '/aws-sdk/src/Aws/S3';
-        app()->end();
+        
             
         $this->aws = S3Client::factory($config);;
     }
