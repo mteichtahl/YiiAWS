@@ -44,12 +44,12 @@ class YiiAWS extends CApplicationComponent {
         );
 
         $this->aws = Aws\S3\S3Client::factory($this->config);
-//
-//        $result = $this->aws->listBuckets();
-//
-//        foreach ($result['Buckets'] as $bucket) {
-//            echo "- {$bucket['Name']}<br>";
-//        }
+
+        $result = $this->aws->listBuckets();
+
+        foreach ($result['Buckets'] as $bucket) {
+            echo "- {$bucket['Name']}<br>";
+        }
     }
 
 }
