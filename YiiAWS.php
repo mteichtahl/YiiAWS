@@ -86,6 +86,24 @@ Yii::app()->autoloader->getAutoloader()->addNamespace('Aws\S3\Enum', __DIR__ . '
  * @method waitUntilObjectExists(array $input) Wait until an object exists. The input array uses the parameters of the HeadObject operation and waiter specific settings
  */
 
+
+/**
+ * $poo = app()->YiiAWS->init();
+//
+//$result = $poo->listBuckets();
+//
+//foreach ($result['Buckets'] as $bucket) {
+//    echo "- {$bucket['Name']}<br>";
+//
+//    $listObjectsCommand = $poo->getCommand('ListObjects', array('Bucket' => 'jg_511841c60a6f7'));
+//
+//    $iterator = $poo->getIterator($listObjectsCommand);
+//
+//    foreach ($iterator as $object) {
+//        echo $object['Key'] . ' - ' . $object['Size'] . 'Bytes - ' . $object['LastModified'] . '</br>';
+//    }
+//}
+ */
 class YiiAWS extends CApplicationComponent {
 
     public $key;
