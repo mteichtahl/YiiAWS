@@ -12,13 +12,11 @@
  * 
  * @package YiiAMQP
  */
-
 //require 'AWSSDKforPHP/aws.phar';
 //use Aws\Common\Enum\Region;
 //use Aws\S3\S3Client as S3ClientV2;
 
 Yii::app()->autoloader->getAutoloader()->addNamespace('Aws\S3', __DIR__ . '/aws-sdk/src/Aws/S3');
-
 
 /**
  * YiiAWS
@@ -35,25 +33,25 @@ class YiiAWS extends CApplicationComponent {
     public $key;
     public $secret;
     public $region;
-    
     protected $aws = NULL;
     protected $config = array();
-    
-    public function  test()
-    {
+
+    public function test() {
         $this->config = array(
-            'key'=>$this->key,
-            'secret'=>$this->secret,
-            'region'=>$this->region
+            'key' => $this->key,
+            'secret' => $this->secret,
+            'region' => $this->region
         );
-        
+
         $this->aws = Aws\S3\S3Client::factory($config);
-        
-        print_r($this->aws);
-        app()->end();
+
+        $result = $this->aws->listBuckets();
+
+        foreach ($result['Buckets'] as $bucket) {
+            echo "- {$bucket['Name']}<br>";
+        }
     }
- 
-    
+
 }
 
 ?>
