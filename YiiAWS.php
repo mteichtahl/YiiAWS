@@ -31,6 +31,7 @@ use Aws\S3\S3Client as S3ClientV2;
  */
 class YiiAWS extends CApplicationComponent {
 
+    private $key;
     public function  test()
     {
         
