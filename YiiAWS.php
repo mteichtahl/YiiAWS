@@ -15,6 +15,9 @@
 require __DIR__.'/aws.phar';
 
 Yii::app()->autoloader->getAutoloader()->addNamespace('Aws\S3', __DIR__ . '/aws-sdk/src/Aws/S3');
+Yii::app()->autoloader->getAutoloader()->addNamespace('Aws\S3\Exception', __DIR__ . '/aws-sdk/src/Aws/S3/Exception');
+Yii::app()->autoloader->getAutoloader()->addNamespace('Aws\S3\Enum', __DIR__ . '/aws-sdk/src/Aws/S3/Enum');
+
 
 /**
  * YiiAWS
@@ -100,13 +103,12 @@ class YiiAWS extends CApplicationComponent {
 
         $this->aws = Aws\S3\S3Client::factory($this->config);
 
-
         // Check that the factory created our object
         if (get_class($this->aws) != 'Aws\S3\S3Client')
         {
+            // We couldnt create it so throw an exception
             throw new CHttpException(404,'Could not create AWS Service.');
-        }
-        
+        }        
         return $this->aws;
     }
 
