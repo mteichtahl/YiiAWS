@@ -41,7 +41,7 @@ class YiiAWS extends CApplicationComponent {
     function __construct() {
         
         
-            
+            echo 'fff';
         
     }
     
