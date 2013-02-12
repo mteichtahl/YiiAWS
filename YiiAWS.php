@@ -42,12 +42,12 @@ class YiiAWS extends CApplicationComponent {
         
         
             
-        $this->aws = Aws\S3\S3Client::factory($config);;
+        
     }
     
     public function  test()
     {
-        
+        $this->aws = Aws\S3\S3Client::factory($config);
         echo '4444';
     }
  
