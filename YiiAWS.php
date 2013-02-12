@@ -17,7 +17,7 @@
 //use Aws\Common\Enum\Region;
 //use Aws\S3\S3Client as S3ClientV2;
 
-Yii::app()->autoloader->getAutoloader()->addNamespace('Aws\S3\S3Client', __DIR__ . '/aws-sdk/src/Aws/S3');
+//Yii::app()->autoloader->getAutoloader()->addNamespace('Aws\S3\S3Client', __DIR__ . '/aws-sdk/src/Aws/S3');
 
 
 /**
@@ -39,6 +39,10 @@ class YiiAWS extends CApplicationComponent {
     protected $aws = NULL;
     
     function __construct() {
+        
+        echo __DIR__ . '/aws-sdk/src/Aws/S3';
+        app()->end();
+            
         $this->aws = S3Client::factory($config);;
     }
     
