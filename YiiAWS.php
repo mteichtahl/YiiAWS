@@ -12,7 +12,7 @@
  * 
  * @package YiiAMQP
  */
-require 'aws.phar';
+require __DIR__ . '/aws.phar';
 //use Aws\Common\Enum\Region;
 //use Aws\S3\S3Client as S3ClientV2;
 
