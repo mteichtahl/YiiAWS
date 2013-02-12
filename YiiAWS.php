@@ -43,7 +43,7 @@ class YiiAWS extends CApplicationComponent {
             'region' => $this->region
         );
 
-        $this->aws = Aws\S3\S3Client::factory($config);
+        $this->aws = Aws\S3\S3Client::factory($this->config);
 //
 //        $result = $this->aws->listBuckets();
 //
