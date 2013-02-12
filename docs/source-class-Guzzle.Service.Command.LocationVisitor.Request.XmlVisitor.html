@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+	<meta name="robots" content="noindex" />
+
+	<title>File aws-sdk/vendor/guzzle/guzzle/src/Guzzle/Service/Command/LocationVisitor/Request/XmlVisitor.php | YiiAWS</title>
+
+	<script type="text/javascript" src="resources/combined.js?709491018"></script>
+	<script type="text/javascript" src="elementlist.js?3541143681"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-Aws.html">Aws<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.AutoScaling.html">AutoScaling<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.AutoScaling.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.AutoScaling.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.CloudFront.html">CloudFront<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.CloudFront.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.CloudFront.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.CloudWatch.html">CloudWatch<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.CloudWatch.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.CloudWatch.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.Client.html">Client</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Credentials.html">Credentials</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Exception.html">Exception<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.Exception.Parser.html">Parser</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.Hash.html">Hash</a>
+						</li>
+				<li><a href="namespace-Aws.Common.InstanceMetadata.html">InstanceMetadata<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.InstanceMetadata.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.Region.html">Region</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Signature.html">Signature</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.DataPipeline.html">DataPipeline<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DataPipeline.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.DataPipeline.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.DynamoDb.html">DynamoDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DynamoDb.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.DynamoDb.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.DynamoDb.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.DynamoDb.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DynamoDb.Model.BatchRequest.html">BatchRequest</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.DynamoDb.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DynamoDb.Session.LockingStrategy.html">LockingStrategy</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Aws.Ec2.html">Ec2<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Ec2.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Ec2.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.Ec2.Iterator.html">Iterator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.ElasticBeanstalk.html">ElasticBeanstalk<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.ElasticBeanstalk.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.ElasticBeanstalk.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.ElasticLoadBalancing.html">ElasticLoadBalancing<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.ElasticLoadBalancing.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.ElasticTranscoder.html">ElasticTranscoder<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.ElasticTranscoder.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Glacier.html">Glacier<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Glacier.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Glacier.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.Glacier.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Glacier.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Aws.Iam.html">Iam<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Iam.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Iam.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Route53.html">Route53<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Route53.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Route53.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.S3.html">S3<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.S3.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.S3.Exception.html">Exception<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.S3.Exception.Parser.html">Parser</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.S3.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.S3.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.S3.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Aws.Ses.html">Ses<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Ses.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Ses.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.SimpleDb.html">SimpleDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.SimpleDb.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Sns.html">Sns<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Sns.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Sqs.html">Sqs<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Sqs.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Sqs.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Sts.html">Sts<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Sts.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Swf.html">Swf<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Swf.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Swf.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.AutoScaling.html">AutoScaling<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.AutoScaling.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.CloudFront.html">CloudFront<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.CloudFront.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.CloudFront.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.CloudWatch.html">CloudWatch<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.CloudWatch.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Common.Client.html">Client</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Credentials.html">Credentials</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Exception.html">Exception<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Common.Exception.Parser.html">Parser</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Common.Hash.html">Hash</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.InstanceMetadata.html">InstanceMetadata</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Common.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Common.Region.html">Region</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Signature.html">Signature</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DataPipeline.html">DataPipeline<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DataPipeline.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.html">DynamoDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Model.BatchRequest.html">BatchRequest</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Session.LockingStrategy.html">LockingStrategy</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Ec2.html">Ec2<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Ec2.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Ec2.Iterator.html">Iterator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.ElasticBeanstalk.html">ElasticBeanstalk<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.ElasticBeanstalk.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.ElasticLoadBalancing.html">ElasticLoadBalancing<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.ElasticLoadBalancing.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.ElasticTranscoder.html">ElasticTranscoder<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.ElasticTranscoder.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Glacier.html">Glacier<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Glacier.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Glacier.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Glacier.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Glacier.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Iam.html">Iam<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Iam.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Route53.html">Route53<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Route53.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.S3.html">S3<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.S3.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.S3.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.S3.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.S3.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.S3.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.S3.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Ses.html">Ses<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Ses.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.SimpleDb.html">SimpleDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.SimpleDb.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Sns.html">Sns<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Sns.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Sqs.html">Sqs<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Sqs.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Sts.html">Sts<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Sts.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Swf.html">Swf<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Swf.Integration.html">Integration</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Composer.html">Composer<span></span></a>
+						<ul>
+				<li><a href="namespace-Composer.Autoload.html">Autoload</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Guzzle.html">Guzzle<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Batch.html">Batch<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Batch.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Common.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Http.html">Http<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Http.Curl.html">Curl</a>
+						</li>
+				<li><a href="namespace-Guzzle.Http.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Http.Message.html">Message</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Inflection.html">Inflection</a>
+						</li>
+				<li><a href="namespace-Guzzle.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Guzzle.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.html">Parser<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Parser.Cookie.html">Cookie</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.Message.html">Message</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.UriTemplate.html">UriTemplate</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.Url.html">Url</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Plugin.Async.html">Async</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Backoff.html">Backoff</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Cookie.html">Cookie<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Plugin.Cookie.CookieJar.html">CookieJar</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Cookie.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Plugin.CurlAuth.html">CurlAuth</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.History.html">History</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Md5.html">Md5</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Mock.html">Mock</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Oauth.html">Oauth</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Guzzle.Service.html">Service<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Service.Builder.html">Builder</a>
+						</li>
+				<li class="active"><a href="namespace-Guzzle.Service.Command.html">Command<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Service.Command.Factory.html">Factory</a>
+						</li>
+				<li class="active"><a href="namespace-Guzzle.Service.Command.LocationVisitor.html">LocationVisitor<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Guzzle.Service.Command.LocationVisitor.Request.html">Request</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Command.LocationVisitor.Response.html">Response</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Guzzle.Service.Description.html">Description</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Resource.html">Resource</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Stream.html">Stream</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Batch.html">Batch</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Common.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Common.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Http.html">Http<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Http.Curl.html">Curl</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Http.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Http.Message.html">Message</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Inflection.html">Inflection</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Message.html">Message</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Mock.html">Mock</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Parser.html">Parser<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Parser.Cookie.html">Cookie</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Parser.Message.html">Message</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Parser.Url.html">Url</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Parsers.html">Parsers<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Parsers.UriTemplate.html">UriTemplate</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Async.html">Async</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Backoff.html">Backoff</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Cookie.html">Cookie<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Cookie.CookieJar.html">CookieJar</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.CurlAuth.html">CurlAuth</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.History.html">History</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Md5.html">Md5</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Mock.html">Mock</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Oauth.html">Oauth</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Redirect.html">Redirect</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.html">Service<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.html">Command<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.LocationVisitor.html">LocationVisitor<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.LocationVisitor.Request.html">Request</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.LocationVisitor.Response.html">Response</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.Description.html">Description</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.html">Mock<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.Command.html">Command<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.Command.Sub.html">Sub</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.Model.html">Model</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.Resource.html">Resource</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Stream.html">Stream</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Symfony.html">Symfony<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.html">Component<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.html">Tests</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Guzzle.Service.Command.LocationVisitor.Request.AbstractRequestVisitor.html">AbstractRequestVisitor</a></li>
+				<li><a href="class-Guzzle.Service.Command.LocationVisitor.Request.BodyVisitor.html">BodyVisitor</a></li>
+				<li><a href="class-Guzzle.Service.Command.LocationVisitor.Request.HeaderVisitor.html">HeaderVisitor</a></li>
+				<li><a href="class-Guzzle.Service.Command.LocationVisitor.Request.JsonVisitor.html">JsonVisitor</a></li>
+				<li><a href="class-Guzzle.Service.Command.LocationVisitor.Request.PostFieldVisitor.html">PostFieldVisitor</a></li>
+				<li><a href="class-Guzzle.Service.Command.LocationVisitor.Request.PostFileVisitor.html">PostFileVisitor</a></li>
+				<li><a href="class-Guzzle.Service.Command.LocationVisitor.Request.QueryVisitor.html">QueryVisitor</a></li>
+				<li><a href="class-Guzzle.Service.Command.LocationVisitor.Request.ResponseBodyVisitor.html">ResponseBodyVisitor</a></li>
+				<li class="active"><a href="class-Guzzle.Service.Command.LocationVisitor.Request.XmlVisitor.html">XmlVisitor</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Guzzle.Service.Command.LocationVisitor.Request.RequestVisitorInterface.html">RequestVisitorInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Guzzle.Service.Command.LocationVisitor.Request.html" title="Summary of Guzzle\Service\Command\LocationVisitor\Request"><span>Namespace</span></a>
+			</li>
+			<li>
+				<a href="class-Guzzle.Service.Command.LocationVisitor.Request.XmlVisitor.html" title="Summary of Guzzle\Service\Command\LocationVisitor\Request\XmlVisitor"><span>Class</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<pre><code><span id="1" class="l"><a class="l" href="#1">  1: </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a class="l" href="#2">  2: </a>
+</span><span id="3" class="l"><a class="l" href="#3">  3: </a><span class="php-keyword1">namespace</span> Guzzle\Service\Command\LocationVisitor\Request;
+</span><span id="4" class="l"><a class="l" href="#4">  4: </a>
+</span><span id="5" class="l"><a class="l" href="#5">  5: </a><span class="php-keyword1">use</span> Guzzle\Http\Message\RequestInterface;
+</span><span id="6" class="l"><a class="l" href="#6">  6: </a><span class="php-keyword1">use</span> Guzzle\Service\Command\CommandInterface;
+</span><span id="7" class="l"><a class="l" href="#7">  7: </a><span class="php-keyword1">use</span> Guzzle\Service\Description\Operation;
+</span><span id="8" class="l"><a class="l" href="#8">  8: </a><span class="php-keyword1">use</span> Guzzle\Service\Description\Parameter;
+</span><span id="9" class="l"><a class="l" href="#9">  9: </a>
+</span><span id="10" class="l"><a class="l" href="#10"> 10: </a><span class="php-comment">/**
+</span></span><span id="11" class="l"><a class="l" href="#11"> 11: </a><span class="php-comment"> * Location visitor used to serialize XML bodies
+</span></span><span id="12" class="l"><a class="l" href="#12"> 12: </a><span class="php-comment"> */</span>
+</span><span id="13" class="l"><a class="l" href="#13"> 13: </a><span class="php-keyword1">class</span> <a id="XmlVisitor" href="#XmlVisitor">XmlVisitor</a> <span class="php-keyword1">extends</span> AbstractRequestVisitor
+</span><span id="14" class="l"><a class="l" href="#14"> 14: </a>{
+</span><span id="15" class="l"><a class="l" href="#15"> 15: </a>    <span class="php-comment">/**
+</span></span><span id="16" class="l"><a class="l" href="#16"> 16: </a><span class="php-comment">     * @var \SplObjectStorage Data object for persisting XML data
+</span></span><span id="17" class="l"><a class="l" href="#17"> 17: </a><span class="php-comment">     */</span>
+</span><span id="18" class="l"><a class="l" href="#18"> 18: </a>    <span class="php-keyword1">protected</span> <span class="php-var"><a id="$data" href="#$data">$data</a></span>;
+</span><span id="19" class="l"><a class="l" href="#19"> 19: </a>
+</span><span id="20" class="l"><a class="l" href="#20"> 20: </a>    <span class="php-comment">/**
+</span></span><span id="21" class="l"><a class="l" href="#21"> 21: </a><span class="php-comment">     * @var bool Content-Type header added when XML is found
+</span></span><span id="22" class="l"><a class="l" href="#22"> 22: </a><span class="php-comment">     */</span>
+</span><span id="23" class="l"><a class="l" href="#23"> 23: </a>    <span class="php-keyword1">protected</span> <span class="php-var"><a id="$contentType" href="#$contentType">$contentType</a></span> = <span class="php-quote">'application/xml'</span>;
+</span><span id="24" class="l"><a class="l" href="#24"> 24: </a>
+</span><span id="25" class="l"><a class="l" href="#25"> 25: </a>    <span class="php-comment">/**
+</span></span><span id="26" class="l"><a class="l" href="#26"> 26: </a><span class="php-comment">     * This visitor uses an {@see \SplObjectStorage} to associate XML data with commands
+</span></span><span id="27" class="l"><a class="l" href="#27"> 27: </a><span class="php-comment">     */</span>
+</span><span id="28" class="l"><a class="l" href="#28"> 28: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="___construct" href="#___construct">__construct</a>()
+</span><span id="29" class="l"><a class="l" href="#29"> 29: </a>    {
+</span><span id="30" class="l"><a class="l" href="#30"> 30: </a>        <span class="php-var">$this</span>-&gt;data = <span class="php-keyword1">new</span> \SplObjectStorage();
+</span><span id="31" class="l"><a class="l" href="#31"> 31: </a>    }
+</span><span id="32" class="l"><a class="l" href="#32"> 32: </a>
+</span><span id="33" class="l"><a class="l" href="#33"> 33: </a>    <span class="php-comment">/**
+</span></span><span id="34" class="l"><a class="l" href="#34"> 34: </a><span class="php-comment">     * Change the content-type header that is added when XML is found
+</span></span><span id="35" class="l"><a class="l" href="#35"> 35: </a><span class="php-comment">     *
+</span></span><span id="36" class="l"><a class="l" href="#36"> 36: </a><span class="php-comment">     * @param string $header Header to set when XML is found
+</span></span><span id="37" class="l"><a class="l" href="#37"> 37: </a><span class="php-comment">     *
+</span></span><span id="38" class="l"><a class="l" href="#38"> 38: </a><span class="php-comment">     * @return self
+</span></span><span id="39" class="l"><a class="l" href="#39"> 39: </a><span class="php-comment">     */</span>
+</span><span id="40" class="l"><a class="l" href="#40"> 40: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_setContentTypeHeader" href="#_setContentTypeHeader">setContentTypeHeader</a>(<span class="php-var">$header</span>)
+</span><span id="41" class="l"><a class="l" href="#41"> 41: </a>    {
+</span><span id="42" class="l"><a class="l" href="#42"> 42: </a>        <span class="php-var">$this</span>-&gt;contentType = <span class="php-var">$header</span>;
+</span><span id="43" class="l"><a class="l" href="#43"> 43: </a>
+</span><span id="44" class="l"><a class="l" href="#44"> 44: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>;
+</span><span id="45" class="l"><a class="l" href="#45"> 45: </a>    }
+</span><span id="46" class="l"><a class="l" href="#46"> 46: </a>
+</span><span id="47" class="l"><a class="l" href="#47"> 47: </a>    <span class="php-comment">/**
+</span></span><span id="48" class="l"><a class="l" href="#48"> 48: </a><span class="php-comment">     * {@inheritdoc}
+</span></span><span id="49" class="l"><a class="l" href="#49"> 49: </a><span class="php-comment">     */</span>
+</span><span id="50" class="l"><a class="l" href="#50"> 50: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_visit" href="#_visit">visit</a>(CommandInterface <span class="php-var">$command</span>, RequestInterface <span class="php-var">$request</span>, Parameter <span class="php-var">$param</span>, <span class="php-var">$value</span>)
+</span><span id="51" class="l"><a class="l" href="#51"> 51: </a>    {
+</span><span id="52" class="l"><a class="l" href="#52"> 52: </a>        <span class="php-var">$xml</span> = <span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;data[<span class="php-var">$command</span>])
+</span><span id="53" class="l"><a class="l" href="#53"> 53: </a>            ? <span class="php-var">$this</span>-&gt;data[<span class="php-var">$command</span>]
+</span><span id="54" class="l"><a class="l" href="#54"> 54: </a>            : <span class="php-var">$this</span>-&gt;createRootElement(<span class="php-var">$param</span>-&gt;getParent());
+</span><span id="55" class="l"><a class="l" href="#55"> 55: </a>        <span class="php-var">$this</span>-&gt;addXml(<span class="php-var">$xml</span>, <span class="php-var">$param</span>, <span class="php-var">$value</span>);
+</span><span id="56" class="l"><a class="l" href="#56"> 56: </a>        <span class="php-var">$this</span>-&gt;data[<span class="php-var">$command</span>] = <span class="php-var">$xml</span>;
+</span><span id="57" class="l"><a class="l" href="#57"> 57: </a>    }
+</span><span id="58" class="l"><a class="l" href="#58"> 58: </a>
+</span><span id="59" class="l"><a class="l" href="#59"> 59: </a>    <span class="php-comment">/**
+</span></span><span id="60" class="l"><a class="l" href="#60"> 60: </a><span class="php-comment">     * {@inheritdoc}
+</span></span><span id="61" class="l"><a class="l" href="#61"> 61: </a><span class="php-comment">     */</span>
+</span><span id="62" class="l"><a class="l" href="#62"> 62: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_after" href="#_after">after</a>(CommandInterface <span class="php-var">$command</span>, RequestInterface <span class="php-var">$request</span>)
+</span><span id="63" class="l"><a class="l" href="#63"> 63: </a>    {
+</span><span id="64" class="l"><a class="l" href="#64"> 64: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;data[<span class="php-var">$command</span>])) {
+</span><span id="65" class="l"><a class="l" href="#65"> 65: </a>            <span class="php-var">$xml</span> = <span class="php-var">$this</span>-&gt;data[<span class="php-var">$command</span>];
+</span><span id="66" class="l"><a class="l" href="#66"> 66: </a>            <span class="php-keyword1">unset</span>(<span class="php-var">$this</span>-&gt;data[<span class="php-var">$command</span>]);
+</span><span id="67" class="l"><a class="l" href="#67"> 67: </a>            <span class="php-var">$request</span>-&gt;setBody(<span class="php-var">$xml</span>-&gt;asXML());
+</span><span id="68" class="l"><a class="l" href="#68"> 68: </a>            <span class="php-comment">// Don't overwrite the Content-Type if one is set</span>
+</span><span id="69" class="l"><a class="l" href="#69"> 69: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;contentType &amp;&amp; !<span class="php-var">$request</span>-&gt;hasHeader(<span class="php-quote">'Content-Type'</span>)) {
+</span><span id="70" class="l"><a class="l" href="#70"> 70: </a>                <span class="php-var">$request</span>-&gt;setHeader(<span class="php-quote">'Content-Type'</span>, <span class="php-var">$this</span>-&gt;contentType);
+</span><span id="71" class="l"><a class="l" href="#71"> 71: </a>            }
+</span><span id="72" class="l"><a class="l" href="#72"> 72: </a>        }
+</span><span id="73" class="l"><a class="l" href="#73"> 73: </a>    }
+</span><span id="74" class="l"><a class="l" href="#74"> 74: </a>
+</span><span id="75" class="l"><a class="l" href="#75"> 75: </a>    <span class="php-comment">/**
+</span></span><span id="76" class="l"><a class="l" href="#76"> 76: </a><span class="php-comment">     * Create the root XML element to use with a request
+</span></span><span id="77" class="l"><a class="l" href="#77"> 77: </a><span class="php-comment">     *
+</span></span><span id="78" class="l"><a class="l" href="#78"> 78: </a><span class="php-comment">     * @param Operation $operation Operation object
+</span></span><span id="79" class="l"><a class="l" href="#79"> 79: </a><span class="php-comment">     *
+</span></span><span id="80" class="l"><a class="l" href="#80"> 80: </a><span class="php-comment">     * @return \SimpleXMLElement
+</span></span><span id="81" class="l"><a class="l" href="#81"> 81: </a><span class="php-comment">     */</span>
+</span><span id="82" class="l"><a class="l" href="#82"> 82: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_createRootElement" href="#_createRootElement">createRootElement</a>(Operation <span class="php-var">$operation</span>)
+</span><span id="83" class="l"><a class="l" href="#83"> 83: </a>    {
+</span><span id="84" class="l"><a class="l" href="#84"> 84: </a>        <span class="php-keyword1">static</span> <span class="php-var"><a id="$defaultRoot" href="#$defaultRoot">$defaultRoot</a></span> = <span class="php-keyword1">array</span>(<span class="php-quote">'name'</span> =&gt; <span class="php-quote">'Request'</span>);
+</span><span id="85" class="l"><a class="l" href="#85"> 85: </a>        <span class="php-comment">// If no root element was specified, then just wrap the XML in 'Request'</span>
+</span><span id="86" class="l"><a class="l" href="#86"> 86: </a>        <span class="php-var">$root</span> = <span class="php-var">$operation</span>-&gt;getData(<span class="php-quote">'xmlRoot'</span>) ?: <span class="php-var">$defaultRoot</span>;
+</span><span id="87" class="l"><a class="l" href="#87"> 87: </a>
+</span><span id="88" class="l"><a class="l" href="#88"> 88: </a>        <span class="php-comment">// Create the wrapping element with no namespaces if no namespaces were present</span>
+</span><span id="89" class="l"><a class="l" href="#89"> 89: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">empty</span>(<span class="php-var">$root</span>[<span class="php-quote">'namespaces'</span>])) {
+</span><span id="90" class="l"><a class="l" href="#90"> 90: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">new</span> \SimpleXMLElement(<span class="php-quote">&quot;&lt;</span><span class="php-var">{$root['name']}</span><span class="php-quote">/&gt;&quot;</span>);
+</span><span id="91" class="l"><a class="l" href="#91"> 91: </a>        } <span class="php-keyword1">else</span> {
+</span><span id="92" class="l"><a class="l" href="#92"> 92: </a>            <span class="php-comment">// Create the wrapping element with an array of one or more namespaces</span>
+</span><span id="93" class="l"><a class="l" href="#93"> 93: </a>            <span class="php-var">$xml</span> = <span class="php-quote">&quot;&lt;</span><span class="php-var">{$root['name']}</span><span class="php-quote"> &quot;</span>;
+</span><span id="94" class="l"><a class="l" href="#94"> 94: </a>            <span class="php-keyword1">foreach</span> ((<span class="php-keyword1">array</span>) <span class="php-var">$root</span>[<span class="php-quote">'namespaces'</span>] <span class="php-keyword1">as</span> <span class="php-var">$prefix</span> =&gt; <span class="php-var">$uri</span>) {
+</span><span id="95" class="l"><a class="l" href="#95"> 95: </a>                <span class="php-var">$xml</span> .= <span class="php-keyword2">is_numeric</span>(<span class="php-var">$prefix</span>) ? <span class="php-quote">&quot;xmlns=\&quot;</span><span class="php-var">{$uri}</span><span class="php-quote">\&quot; &quot;</span> : <span class="php-quote">&quot;xmlns:</span><span class="php-var">{$prefix}</span><span class="php-quote">=\&quot;</span><span class="php-var">{$uri}</span><span class="php-quote">\&quot; &quot;</span>;
+</span><span id="96" class="l"><a class="l" href="#96"> 96: </a>            }
+</span><span id="97" class="l"><a class="l" href="#97"> 97: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">new</span> \SimpleXMLElement(<span class="php-var">$xml</span> . <span class="php-quote">&quot;/&gt;&quot;</span>);
+</span><span id="98" class="l"><a class="l" href="#98"> 98: </a>        }
+</span><span id="99" class="l"><a class="l" href="#99"> 99: </a>    }
+</span><span id="100" class="l"><a class="l" href="#100">100: </a>
+</span><span id="101" class="l"><a class="l" href="#101">101: </a>    <span class="php-comment">/**
+</span></span><span id="102" class="l"><a class="l" href="#102">102: </a><span class="php-comment">     * Recursively build the XML body
+</span></span><span id="103" class="l"><a class="l" href="#103">103: </a><span class="php-comment">     *
+</span></span><span id="104" class="l"><a class="l" href="#104">104: </a><span class="php-comment">     * @param \SimpleXMLElement $xml   XML to modify
+</span></span><span id="105" class="l"><a class="l" href="#105">105: </a><span class="php-comment">     * @param Parameter         $param API Parameter
+</span></span><span id="106" class="l"><a class="l" href="#106">106: </a><span class="php-comment">     * @param mixed             $value Value to add
+</span></span><span id="107" class="l"><a class="l" href="#107">107: </a><span class="php-comment">     */</span>
+</span><span id="108" class="l"><a class="l" href="#108">108: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_addXml" href="#_addXml">addXml</a>(\SimpleXMLElement <span class="php-var">$xml</span>, Parameter <span class="php-var">$param</span>, <span class="php-var">$value</span>)
+</span><span id="109" class="l"><a class="l" href="#109">109: </a>    {
+</span><span id="110" class="l"><a class="l" href="#110">110: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$value</span> === <span class="php-keyword1">null</span>) {
+</span><span id="111" class="l"><a class="l" href="#111">111: </a>            <span class="php-keyword1">return</span>;
+</span><span id="112" class="l"><a class="l" href="#112">112: </a>        }
+</span><span id="113" class="l"><a class="l" href="#113">113: </a>
+</span><span id="114" class="l"><a class="l" href="#114">114: </a>        <span class="php-var">$value</span> = <span class="php-var">$param</span>-&gt;filter(<span class="php-var">$value</span>);
+</span><span id="115" class="l"><a class="l" href="#115">115: </a>        <span class="php-var">$type</span> = <span class="php-var">$param</span>-&gt;<span class="php-keyword2">getType</span>();
+</span><span id="116" class="l"><a class="l" href="#116">116: </a>
+</span><span id="117" class="l"><a class="l" href="#117">117: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$type</span> == <span class="php-quote">'object'</span> || <span class="php-var">$type</span> == <span class="php-quote">'array'</span>) {
+</span><span id="118" class="l"><a class="l" href="#118">118: </a>            <span class="php-var">$ele</span> = <span class="php-var">$param</span>-&gt;getData(<span class="php-quote">'xmlFlattened'</span>) ? <span class="php-var">$xml</span> : <span class="php-var">$xml</span>-&gt;addChild(<span class="php-var">$param</span>-&gt;getWireName());
+</span><span id="119" class="l"><a class="l" href="#119">119: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$param</span>-&gt;<span class="php-keyword2">getType</span>() == <span class="php-quote">'array'</span>) {
+</span><span id="120" class="l"><a class="l" href="#120">120: </a>                <span class="php-var">$this</span>-&gt;addXmlArray(<span class="php-var">$ele</span>, <span class="php-var">$param</span>, <span class="php-var">$value</span>, <span class="php-var">$param</span>-&gt;getData(<span class="php-quote">'xmlNamespace'</span>));
+</span><span id="121" class="l"><a class="l" href="#121">121: </a>            } <span class="php-keyword1">elseif</span> (<span class="php-var">$param</span>-&gt;<span class="php-keyword2">getType</span>() == <span class="php-quote">'object'</span>) {
+</span><span id="122" class="l"><a class="l" href="#122">122: </a>                <span class="php-var">$this</span>-&gt;addXmlObject(<span class="php-var">$ele</span>, <span class="php-var">$param</span>, <span class="php-var">$value</span>);
+</span><span id="123" class="l"><a class="l" href="#123">123: </a>            }
+</span><span id="124" class="l"><a class="l" href="#124">124: </a>        } <span class="php-keyword1">elseif</span> (<span class="php-var">$param</span>-&gt;getData(<span class="php-quote">'xmlAttribute'</span>)) {
+</span><span id="125" class="l"><a class="l" href="#125">125: </a>            <span class="php-var">$xml</span>-&gt;addAttribute(<span class="php-var">$param</span>-&gt;getWireName(), <span class="php-var">$value</span>, <span class="php-var">$param</span>-&gt;getData(<span class="php-quote">'xmlNamespace'</span>));
+</span><span id="126" class="l"><a class="l" href="#126">126: </a>        } <span class="php-keyword1">else</span> {
+</span><span id="127" class="l"><a class="l" href="#127">127: </a>            <span class="php-var">$xml</span>-&gt;addChild(<span class="php-var">$param</span>-&gt;getWireName(), <span class="php-var">$value</span>, <span class="php-var">$param</span>-&gt;getData(<span class="php-quote">'xmlNamespace'</span>));
+</span><span id="128" class="l"><a class="l" href="#128">128: </a>        }
+</span><span id="129" class="l"><a class="l" href="#129">129: </a>    }
+</span><span id="130" class="l"><a class="l" href="#130">130: </a>
+</span><span id="131" class="l"><a class="l" href="#131">131: </a>    <span class="php-comment">/**
+</span></span><span id="132" class="l"><a class="l" href="#132">132: </a><span class="php-comment">     * Add an array to the XML
+</span></span><span id="133" class="l"><a class="l" href="#133">133: </a><span class="php-comment">     */</span>
+</span><span id="134" class="l"><a class="l" href="#134">134: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_addXmlArray" href="#_addXmlArray">addXmlArray</a>(\SimpleXMLElement <span class="php-var">$xml</span>, Parameter <span class="php-var">$param</span>, &amp;<span class="php-var">$value</span>)
+</span><span id="135" class="l"><a class="l" href="#135">135: </a>    {
+</span><span id="136" class="l"><a class="l" href="#136">136: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$items</span> = <span class="php-var">$param</span>-&gt;getItems()) {
+</span><span id="137" class="l"><a class="l" href="#137">137: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$value</span> <span class="php-keyword1">as</span> <span class="php-var">$v</span>) {
+</span><span id="138" class="l"><a class="l" href="#138">138: </a>                <span class="php-var">$this</span>-&gt;addXml(<span class="php-var">$xml</span>, <span class="php-var">$items</span>, <span class="php-var">$v</span>);
+</span><span id="139" class="l"><a class="l" href="#139">139: </a>            }
+</span><span id="140" class="l"><a class="l" href="#140">140: </a>        }
+</span><span id="141" class="l"><a class="l" href="#141">141: </a>    }
+</span><span id="142" class="l"><a class="l" href="#142">142: </a>
+</span><span id="143" class="l"><a class="l" href="#143">143: </a>    <span class="php-comment">/**
+</span></span><span id="144" class="l"><a class="l" href="#144">144: </a><span class="php-comment">     * Add an object to the XML
+</span></span><span id="145" class="l"><a class="l" href="#145">145: </a><span class="php-comment">     */</span>
+</span><span id="146" class="l"><a class="l" href="#146">146: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_addXmlObject" href="#_addXmlObject">addXmlObject</a>(\SimpleXMLElement <span class="php-var">$xml</span>, Parameter <span class="php-var">$param</span>, &amp;<span class="php-var">$value</span>)
+</span><span id="147" class="l"><a class="l" href="#147">147: </a>    {
+</span><span id="148" class="l"><a class="l" href="#148">148: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$value</span> <span class="php-keyword1">as</span> <span class="php-var">$name</span> =&gt; <span class="php-var">$v</span>) {
+</span><span id="149" class="l"><a class="l" href="#149">149: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$property</span> = <span class="php-var">$param</span>-&gt;getProperty(<span class="php-var">$name</span>)) {
+</span><span id="150" class="l"><a class="l" href="#150">150: </a>                <span class="php-var">$this</span>-&gt;addXml(<span class="php-var">$xml</span>, <span class="php-var">$property</span>, <span class="php-var">$v</span>);
+</span><span id="151" class="l"><a class="l" href="#151">151: </a>            }
+</span><span id="152" class="l"><a class="l" href="#152">152: </a>        }
+</span><span id="153" class="l"><a class="l" href="#153">153: </a>    }
+</span><span id="154" class="l"><a class="l" href="#154">154: </a>}
+</span><span id="155" class="l"><a class="l" href="#155">155: </a></span></code></pre>
+
+	<div id="footer">
+		YiiAWS API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

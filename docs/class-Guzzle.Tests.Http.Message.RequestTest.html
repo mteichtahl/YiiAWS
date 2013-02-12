@@ -1,0 +1,2448 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Guzzle\Tests\Http\Message\RequestTest | YiiAWS</title>
+
+	<script type="text/javascript" src="resources/combined.js?709491018"></script>
+	<script type="text/javascript" src="elementlist.js?3541143681"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-Aws.html">Aws<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.AutoScaling.html">AutoScaling<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.AutoScaling.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.AutoScaling.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.CloudFront.html">CloudFront<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.CloudFront.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.CloudFront.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.CloudWatch.html">CloudWatch<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.CloudWatch.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.CloudWatch.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.Client.html">Client</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Credentials.html">Credentials</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Exception.html">Exception<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.Exception.Parser.html">Parser</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.Hash.html">Hash</a>
+						</li>
+				<li><a href="namespace-Aws.Common.InstanceMetadata.html">InstanceMetadata<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.InstanceMetadata.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.Region.html">Region</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Signature.html">Signature</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.DataPipeline.html">DataPipeline<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DataPipeline.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.DataPipeline.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.DynamoDb.html">DynamoDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DynamoDb.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.DynamoDb.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.DynamoDb.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.DynamoDb.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DynamoDb.Model.BatchRequest.html">BatchRequest</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.DynamoDb.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DynamoDb.Session.LockingStrategy.html">LockingStrategy</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Aws.Ec2.html">Ec2<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Ec2.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Ec2.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.Ec2.Iterator.html">Iterator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.ElasticBeanstalk.html">ElasticBeanstalk<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.ElasticBeanstalk.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.ElasticBeanstalk.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.ElasticLoadBalancing.html">ElasticLoadBalancing<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.ElasticLoadBalancing.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.ElasticTranscoder.html">ElasticTranscoder<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.ElasticTranscoder.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Glacier.html">Glacier<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Glacier.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Glacier.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.Glacier.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Glacier.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Aws.Iam.html">Iam<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Iam.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Iam.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Route53.html">Route53<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Route53.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Route53.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.S3.html">S3<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.S3.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.S3.Exception.html">Exception<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.S3.Exception.Parser.html">Parser</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.S3.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.S3.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.S3.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Aws.Ses.html">Ses<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Ses.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Ses.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.SimpleDb.html">SimpleDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.SimpleDb.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Sns.html">Sns<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Sns.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Sqs.html">Sqs<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Sqs.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Sqs.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Sts.html">Sts<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Sts.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Swf.html">Swf<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Swf.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Swf.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.AutoScaling.html">AutoScaling<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.AutoScaling.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.CloudFront.html">CloudFront<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.CloudFront.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.CloudFront.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.CloudWatch.html">CloudWatch<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.CloudWatch.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Common.Client.html">Client</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Credentials.html">Credentials</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Exception.html">Exception<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Common.Exception.Parser.html">Parser</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Common.Hash.html">Hash</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.InstanceMetadata.html">InstanceMetadata</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Common.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Common.Region.html">Region</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Signature.html">Signature</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DataPipeline.html">DataPipeline<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DataPipeline.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.html">DynamoDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Model.BatchRequest.html">BatchRequest</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Session.LockingStrategy.html">LockingStrategy</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Ec2.html">Ec2<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Ec2.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Ec2.Iterator.html">Iterator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.ElasticBeanstalk.html">ElasticBeanstalk<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.ElasticBeanstalk.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.ElasticLoadBalancing.html">ElasticLoadBalancing<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.ElasticLoadBalancing.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.ElasticTranscoder.html">ElasticTranscoder<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.ElasticTranscoder.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Glacier.html">Glacier<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Glacier.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Glacier.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Glacier.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Glacier.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Iam.html">Iam<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Iam.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Route53.html">Route53<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Route53.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.S3.html">S3<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.S3.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.S3.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.S3.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.S3.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.S3.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.S3.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Ses.html">Ses<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Ses.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.SimpleDb.html">SimpleDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.SimpleDb.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Sns.html">Sns<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Sns.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Sqs.html">Sqs<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Sqs.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Sts.html">Sts<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Sts.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Swf.html">Swf<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Swf.Integration.html">Integration</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Composer.html">Composer<span></span></a>
+						<ul>
+				<li><a href="namespace-Composer.Autoload.html">Autoload</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Guzzle.html">Guzzle<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Batch.html">Batch<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Batch.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Common.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Http.html">Http<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Http.Curl.html">Curl</a>
+						</li>
+				<li><a href="namespace-Guzzle.Http.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Http.Message.html">Message</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Inflection.html">Inflection</a>
+						</li>
+				<li><a href="namespace-Guzzle.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Guzzle.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.html">Parser<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Parser.Cookie.html">Cookie</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.Message.html">Message</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.UriTemplate.html">UriTemplate</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.Url.html">Url</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Plugin.Async.html">Async</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Backoff.html">Backoff</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Cookie.html">Cookie<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Plugin.Cookie.CookieJar.html">CookieJar</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Cookie.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Plugin.CurlAuth.html">CurlAuth</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.History.html">History</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Md5.html">Md5</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Mock.html">Mock</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Oauth.html">Oauth</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Service.html">Service<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Service.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Command.html">Command<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Service.Command.Factory.html">Factory</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Command.LocationVisitor.html">LocationVisitor<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Service.Command.LocationVisitor.Request.html">Request</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Command.LocationVisitor.Response.html">Response</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Guzzle.Service.Description.html">Description</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Resource.html">Resource</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Stream.html">Stream</a>
+						</li>
+				<li class="active"><a href="namespace-Guzzle.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Batch.html">Batch</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Common.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Common.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Guzzle.Tests.Http.html">Http<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Http.Curl.html">Curl</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Http.Exception.html">Exception</a>
+						</li>
+				<li class="active"><a href="namespace-Guzzle.Tests.Http.Message.html">Message</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Inflection.html">Inflection</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Message.html">Message</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Mock.html">Mock</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Parser.html">Parser<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Parser.Cookie.html">Cookie</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Parser.Message.html">Message</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Parser.Url.html">Url</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Parsers.html">Parsers<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Parsers.UriTemplate.html">UriTemplate</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Async.html">Async</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Backoff.html">Backoff</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Cookie.html">Cookie<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Cookie.CookieJar.html">CookieJar</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.CurlAuth.html">CurlAuth</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.History.html">History</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Md5.html">Md5</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Mock.html">Mock</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Oauth.html">Oauth</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Redirect.html">Redirect</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.html">Service<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.html">Command<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.LocationVisitor.html">LocationVisitor<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.LocationVisitor.Request.html">Request</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.LocationVisitor.Response.html">Response</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.Description.html">Description</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.html">Mock<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.Command.html">Command<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.Command.Sub.html">Sub</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.Model.html">Model</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.Resource.html">Resource</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Stream.html">Stream</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Symfony.html">Symfony<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.html">Component<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.html">Tests</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Guzzle.Tests.Http.Message.AbstractMessageTest.html">AbstractMessageTest</a></li>
+				<li><a href="class-Guzzle.Tests.Http.Message.EntityEnclosingRequestTest.html">EntityEnclosingRequestTest</a></li>
+				<li><a href="class-Guzzle.Tests.Http.Message.HeaderTest.html">HeaderTest</a></li>
+				<li><a href="class-Guzzle.Tests.Http.Message.HttpRequestFactoryTest.html">HttpRequestFactoryTest</a></li>
+				<li><a href="class-Guzzle.Tests.Http.Message.PostFileTest.html">PostFileTest</a></li>
+				<li class="active"><a href="class-Guzzle.Tests.Http.Message.RequestTest.html">RequestTest</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Guzzle.Tests.Http.Message.html" title="Summary of Guzzle\Tests\Http\Message"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class RequestTest</h1>
+
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+PHPUnit_Framework_TestCase
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-Guzzle.Tests.GuzzleTestCase.html"><span>Guzzle\Tests\GuzzleTestCase</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Guzzle\Tests\Http\Message\RequestTest</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Guzzle.html">Guzzle</a>\<a href="namespace-Guzzle.Tests.html">Tests</a>\<a href="namespace-Guzzle.Tests.Http.html">Http</a>\<a href="namespace-Guzzle.Tests.Http.Message.html">Message</a><br />
+		
+
+				<b>Group:</b>
+				server<br />
+		<b>Located at</b> <a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#18-885" title="Go to source code">aws-sdk/vendor/guzzle/guzzle/tests/Guzzle/Tests/Http/Message/RequestTest.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="setUp" id="_setUp">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setUp">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#33-37" title="Go to source code">setUp</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="tearDown" id="_tearDown">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_tearDown">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#39-43" title="Go to source code">tearDown</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testConstructorBuildsRequestWithArrayHeaders" id="_testConstructorBuildsRequestWithArrayHeaders">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testConstructorBuildsRequestWithArrayHeaders">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#45-58" title="Go to source code">testConstructorBuildsRequestWithArrayHeaders</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::__construct<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testDescribesEvents" id="_testDescribesEvents">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testDescribesEvents">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#60-66" title="Go to source code">testDescribesEvents</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::getAllEvents<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testConstructorBuildsRequestWithCollectionHeaders" id="_testConstructorBuildsRequestWithCollectionHeaders">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testConstructorBuildsRequestWithCollectionHeaders">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#68-77" title="Go to source code">testConstructorBuildsRequestWithCollectionHeaders</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::__construct<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testConstructorBuildsRequestWithNoHeaders" id="_testConstructorBuildsRequestWithNoHeaders">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testConstructorBuildsRequestWithNoHeaders">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#79-86" title="Go to source code">testConstructorBuildsRequestWithNoHeaders</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::__construct<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testConstructorHandlesBasicAuth" id="_testConstructorHandlesBasicAuth">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testConstructorHandlesBasicAuth">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#88-100" title="Go to source code">testConstructorHandlesBasicAuth</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::__construct<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testConstructorHandlesNonBasicAuth" id="_testConstructorHandlesNonBasicAuth">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testConstructorHandlesNonBasicAuth">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#102-113" title="Go to source code">testConstructorHandlesNonBasicAuth</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::__construct<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRequestsCanBeConvertedToRawMessageStrings" id="_testRequestsCanBeConvertedToRawMessageStrings">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRequestsCanBeConvertedToRawMessageStrings">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#115-134" title="Go to source code">testRequestsCanBeConvertedToRawMessageStrings</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::__toString<br />
+						Guzzle\Http\Message\Request::getRawHeaders<br />
+						Guzzle\Http\Message\AbstractMessage::getHeaderLines<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRequestStringsIncludeAuth" id="_testRequestStringsIncludeAuth">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRequestStringsIncludeAuth">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#136-152" title="Go to source code">testRequestStringsIncludeAuth</a>( )</code>
+
+		<div class="description short">
+			
+<p>Add authorization after the fact and see that it was put in the message</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add authorization after the fact and see that it was put in the message</p>
+
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::__toString<br />
+						Guzzle\Http\Message\Request::getRawHeaders<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetEventDispatcher" id="_testGetEventDispatcher">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetEventDispatcher">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#154-162" title="Go to source code">testGetEventDispatcher</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::getEventDispatcher<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRequestsManageClients" id="_testRequestsManageClients">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRequestsManageClients">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#164-174" title="Go to source code">testRequestsManageClients</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::getClient<br />
+						Guzzle\Http\Message\Request::setClient<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRequestsRequireClients" id="_testRequestsRequireClients">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRequestsRequireClients">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#176-185" title="Go to source code">testRequestsRequireClients</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::send<br />
+				</div>
+				<h4>ExpectedException</h4>
+				<div class="list">
+						\RuntimeException<br />
+				</div>
+				<h4>ExpectedExceptionMessage</h4>
+				<div class="list">
+						A client must be set on the request<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testSend" id="_testSend">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testSend">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#187-206" title="Go to source code">testSend</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::send<br />
+						Guzzle\Http\Message\Request::getResponse<br />
+						Guzzle\Http\Message\Request::setResponse<br />
+						Guzzle\Http\Message\Request::processResponse<br />
+						Guzzle\Http\Message\Request::getResponseBody<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetResponse" id="_testGetResponse">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetResponse">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#208-241" title="Go to source code">testGetResponse</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::getResponse<br />
+						Guzzle\Http\Message\Request::setResponse<br />
+						Guzzle\Http\Message\Request::processResponse<br />
+						Guzzle\Http\Message\Request::getResponseBody<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRequestThrowsExceptionOnBadResponse" id="_testRequestThrowsExceptionOnBadResponse">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRequestThrowsExceptionOnBadResponse">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#243-265" title="Go to source code">testRequestThrowsExceptionOnBadResponse</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::getResponse<br />
+						Guzzle\Http\Message\Request::processResponse<br />
+						Guzzle\Http\Message\Request::getResponseBody<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testManagesQuery" id="_testManagesQuery">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testManagesQuery">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#267-275" title="Go to source code">testManagesQuery</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::getQuery<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRequestHasMethod" id="_testRequestHasMethod">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRequestHasMethod">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#277-283" title="Go to source code">testRequestHasMethod</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::getMethod<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRequestHasScheme" id="_testRequestHasScheme">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRequestHasScheme">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#285-294" title="Go to source code">testRequestHasScheme</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::getScheme<br />
+						Guzzle\Http\Message\Request::setScheme<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRequestHasHost" id="_testRequestHasHost">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRequestHasHost">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#296-312" title="Go to source code">testRequestHasHost</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::getHost<br />
+						Guzzle\Http\Message\Request::setHost<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRequestHasProtocol" id="_testRequestHasProtocol">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRequestHasProtocol">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#314-325" title="Go to source code">testRequestHasProtocol</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::getProtocolVersion<br />
+						Guzzle\Http\Message\Request::setProtocolVersion<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRequestHasPath" id="_testRequestHasPath">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRequestHasPath">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#327-338" title="Go to source code">testRequestHasPath</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::getPath<br />
+						Guzzle\Http\Message\Request::setPath<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRequestHasPort" id="_testRequestHasPort">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRequestHasPort">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#340-355" title="Go to source code">testRequestHasPort</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::getPort<br />
+						Guzzle\Http\Message\Request::setPort<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRequestHandlesAuthorization" id="_testRequestHandlesAuthorization">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRequestHandlesAuthorization">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#357-383" title="Go to source code">testRequestHandlesAuthorization</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::getUsername<br />
+						Guzzle\Http\Message\Request::getPassword<br />
+						Guzzle\Http\Message\Request::setAuth<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testGetResourceUri" id="_testGetResourceUri">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testGetResourceUri">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#385-395" title="Go to source code">testGetResourceUri</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::getResource<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRequestHasMutableUrl" id="_testRequestHasMutableUrl">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRequestHasMutableUrl">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#397-410" title="Go to source code">testRequestHasMutableUrl</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::getUrl<br />
+						Guzzle\Http\Message\Request::setUrl<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRequestHasState" id="_testRequestHasState">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRequestHasState">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#412-421" title="Go to source code">testRequestHasState</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::setState<br />
+						Guzzle\Http\Message\Request::getState<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testSetManualResponse" id="_testSetManualResponse">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testSetManualResponse">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#423-440" title="Go to source code">testSetManualResponse</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::setResponse<br />
+						Guzzle\Http\Message\Request::getResponse<br />
+						Guzzle\Http\Message\Request::getState<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRequestCanHaveManuallySetResponseBody" id="_testRequestCanHaveManuallySetResponseBody">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRequestCanHaveManuallySetResponseBody">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#442-465" title="Go to source code">testRequestCanHaveManuallySetResponseBody</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::setResponseBody<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testDeterminesIfResponseBodyRepeatable" id="_testDeterminesIfResponseBodyRepeatable">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testDeterminesIfResponseBodyRepeatable">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#467-480" title="Go to source code">testDeterminesIfResponseBodyRepeatable</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::isResponseBodyRepeatable<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testDeterminesIfCanCacheRequest" id="_testDeterminesIfCanCacheRequest">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testDeterminesIfCanCacheRequest">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#482-506" title="Go to source code">testDeterminesIfCanCacheRequest</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::canCache<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testHoldsCookies" id="_testHoldsCookies">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testHoldsCookies">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#508-551" title="Go to source code">testHoldsCookies</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRequestThrowsExceptionWhenSetToCompleteWithNoResponse" id="_testRequestThrowsExceptionWhenSetToCompleteWithNoResponse">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRequestThrowsExceptionWhenSetToCompleteWithNoResponse">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#553-561" title="Go to source code">testRequestThrowsExceptionWhenSetToCompleteWithNoResponse</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::processResponse<br />
+				</div>
+				<h4>ExpectedException</h4>
+				<div class="list">
+						Guzzle\Http\Exception\RequestException<br />
+				</div>
+				<h4>ExpectedExceptionMessage</h4>
+				<div class="list">
+						Error completing request<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testClonedRequestsUseNewInternalState" id="_testClonedRequestsUseNewInternalState">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testClonedRequestsUseNewInternalState">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#563-583" title="Go to source code">testClonedRequestsUseNewInternalState</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::__clone<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testCatchesAllHostHeaderChanges" id="_testCatchesAllHostHeaderChanges">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testCatchesAllHostHeaderChanges">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#585-621" title="Go to source code">testCatchesAllHostHeaderChanges</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::changedHeader<br />
+						Guzzle\Http\Message\Request::setHeader<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRecognizesBasicAuthCredentialsInUrls" id="_testRecognizesBasicAuthCredentialsInUrls">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRecognizesBasicAuthCredentialsInUrls">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#623-631" title="Go to source code">testRecognizesBasicAuthCredentialsInUrls</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::setUrl<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testRequestCanBeSentUsingCurl" id="_testRequestCanBeSentUsingCurl">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testRequestCanBeSentUsingCurl">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#633-694" title="Go to source code">testRequestCanBeSentUsingCurl</a>( )</code>
+
+		<div class="description short">
+			
+<p>This test launches a dummy Guzzle\Http\Server\Server object that listens for
+incoming requests. The server allows us to test how cURL sends requests and
+receives responses. We can validate the request structure and whether or not the
+response was interpreted correctly.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>This test launches a dummy Guzzle\Http\Server\Server object that listens for
+incoming requests. The server allows us to test how cURL sends requests and
+receives responses. We can validate the request structure and whether or not the
+response was interpreted correctly.</p>
+
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testThrowsExceptionsWhenUnsuccessfulResponseIsReceivedByDefault" id="_testThrowsExceptionsWhenUnsuccessfulResponseIsReceivedByDefault">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testThrowsExceptionsWhenUnsuccessfulResponseIsReceivedByDefault">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#696-713" title="Go to source code">testThrowsExceptionsWhenUnsuccessfulResponseIsReceivedByDefault</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::onRequestError<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testCanShortCircuitErrorHandling" id="_testCanShortCircuitErrorHandling">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testCanShortCircuitErrorHandling">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#715-733" title="Go to source code">testCanShortCircuitErrorHandling</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::onRequestError<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testCanOverrideUnsuccessfulResponses" id="_testCanOverrideUnsuccessfulResponses">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testCanOverrideUnsuccessfulResponses">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#735-770" title="Go to source code">testCanOverrideUnsuccessfulResponses</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::processResponse<br />
+						Guzzle\Http\Message\Request::onRequestError<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testCanRetrieveUrlObject" id="_testCanRetrieveUrlObject">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testCanRetrieveUrlObject">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#772-781" title="Go to source code">testCanRetrieveUrlObject</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testReceivingUnsuccessfulResponseUsesOtherResponseBody" id="_testReceivingUnsuccessfulResponseUsesOtherResponseBody">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testReceivingUnsuccessfulResponseUsesOtherResponseBody">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#783-799" title="Go to source code">testReceivingUnsuccessfulResponseUsesOtherResponseBody</a>( )</code>
+
+		<div class="description short">
+			
+<p>Users sometimes want to use a custom stream when receiving a response body.
+Because of the various potential for retrying failed requests, the stream
+specified by the user should only be written to in the event that a successful
+response was received. Otherwise, a new temp stream is created to store the body
+of the failed request.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Users sometimes want to use a custom stream when receiving a response body.
+Because of the various potential for retrying failed requests, the stream
+specified by the user should only be written to in the event that a successful
+response was received. Otherwise, a new temp stream is created to store the body
+of the failed request.</p>
+
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::receiveResponseHeader<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testReceivingShortStatusLineResponse" id="_testReceivingShortStatusLineResponse">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testReceivingShortStatusLineResponse">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#801-815" title="Go to source code">testReceivingShortStatusLineResponse</a>( )</code>
+
+		<div class="description short">
+			
+<p>Many RESTful frameworks omit the text status from the header. That provides a
+response like "HTTP/1.1 200". Prevent an Undefined offset by checking to see how
+many parts of the status line are provided before trying to assign them.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Many RESTful frameworks omit the text status from the header. That provides a
+response like "HTTP/1.1 200". Prevent an Undefined offset by checking to see how
+many parts of the status line are provided before trying to assign them.</p>
+
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::receiveResponseHeader<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testAddsPreviousResponseToResponseWhenRedirecting" id="_testAddsPreviousResponseToResponseWhenRedirecting">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testAddsPreviousResponseToResponseWhenRedirecting">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#817-837" title="Go to source code">testAddsPreviousResponseToResponseWhenRedirecting</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						Guzzle\Http\Message\Request::receiveResponseHeader<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testUnresolvedRedirectsReturnResponse" id="_testUnresolvedRedirectsReturnResponse">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testUnresolvedRedirectsReturnResponse">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#839-850" title="Go to source code">testUnresolvedRedirectsReturnResponse</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testCanSendCustomRequests" id="_testCanSendCustomRequests">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testCanSendCustomRequests">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#852-864" title="Go to source code">testCanSendCustomRequests</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testEnsuresFileCanBeCreated" id="_testEnsuresFileCanBeCreated">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testEnsuresFileCanBeCreated">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#866-874" title="Go to source code">testEnsuresFileCanBeCreated</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>ExpectedException</h4>
+				<div class="list">
+						PHPUnit_Framework_Error_Warning<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testAllowsFilenameForDownloadingContent" id="_testAllowsFilenameForDownloadingContent">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testAllowsFilenameForDownloadingContent">#</a>
+		<code><a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#876-884" title="Go to source code">testAllowsFilenameForDownloadingContent</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Guzzle.Tests.GuzzleTestCase.html#methods">Guzzle\Tests\GuzzleTestCase</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Guzzle.Tests.GuzzleTestCase.html#_addMockedRequest">addMockedRequest()</a>, 
+			<a href="class-Guzzle.Tests.GuzzleTestCase.html#_assertContainsIns">assertContainsIns()</a>, 
+			<a href="class-Guzzle.Tests.GuzzleTestCase.html#_compareHeaders">compareHeaders()</a>, 
+			<a href="class-Guzzle.Tests.GuzzleTestCase.html#_getMockResponse">getMockResponse()</a>, 
+			<a href="class-Guzzle.Tests.GuzzleTestCase.html#_getMockedRequests">getMockedRequests()</a>, 
+			<a href="class-Guzzle.Tests.GuzzleTestCase.html#_getServer">getServer()</a>, 
+			<a href="class-Guzzle.Tests.GuzzleTestCase.html#_getServiceBuilder">getServiceBuilder()</a>, 
+			<a href="class-Guzzle.Tests.GuzzleTestCase.html#_getWildcardObserver">getWildcardObserver()</a>, 
+			<a href="class-Guzzle.Tests.GuzzleTestCase.html#_hasSubscriber">hasSubscriber()</a>, 
+			<a href="class-Guzzle.Tests.GuzzleTestCase.html#_setMockBasePath">setMockBasePath()</a>, 
+			<a href="class-Guzzle.Tests.GuzzleTestCase.html#_setMockResponse">setMockResponse()</a>, 
+			<a href="class-Guzzle.Tests.GuzzleTestCase.html#_setServiceBuilder">setServiceBuilder()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="request" id="$request">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Guzzle.Http.Message.Request.html">Guzzle\Http\Message\Request</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#23-26" title="Go to source code"><var>$request</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$request" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="client" id="$client">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Guzzle.Http.Client.html">Guzzle\Http\Client</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Guzzle.Tests.Http.Message.RequestTest.html#28-31" title="Go to source code"><var>$client</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$client" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Guzzle.Tests.GuzzleTestCase.html#properties">Guzzle\Tests\GuzzleTestCase</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Guzzle.Tests.GuzzleTestCase.html#$mockBasePath"><var>$mockBasePath</var></a>, 
+			<a href="class-Guzzle.Tests.GuzzleTestCase.html#$mockObserver"><var>$mockObserver</var></a>, 
+			<a href="class-Guzzle.Tests.GuzzleTestCase.html#$server"><var>$server</var></a>, 
+			<a href="class-Guzzle.Tests.GuzzleTestCase.html#$serviceBuilder"><var>$serviceBuilder</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		YiiAWS API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

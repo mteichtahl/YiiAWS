@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Guzzle\Http\QueryString | YiiAWS</title>
+
+	<script type="text/javascript" src="resources/combined.js?709491018"></script>
+	<script type="text/javascript" src="elementlist.js?3541143681"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-Aws.html">Aws<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.AutoScaling.html">AutoScaling<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.AutoScaling.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.AutoScaling.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.CloudFront.html">CloudFront<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.CloudFront.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.CloudFront.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.CloudWatch.html">CloudWatch<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.CloudWatch.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.CloudWatch.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.Client.html">Client</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Credentials.html">Credentials</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Exception.html">Exception<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.Exception.Parser.html">Parser</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.Hash.html">Hash</a>
+						</li>
+				<li><a href="namespace-Aws.Common.InstanceMetadata.html">InstanceMetadata<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.InstanceMetadata.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.Region.html">Region</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Signature.html">Signature</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.DataPipeline.html">DataPipeline<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DataPipeline.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.DataPipeline.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.DynamoDb.html">DynamoDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DynamoDb.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.DynamoDb.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.DynamoDb.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.DynamoDb.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DynamoDb.Model.BatchRequest.html">BatchRequest</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.DynamoDb.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DynamoDb.Session.LockingStrategy.html">LockingStrategy</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Aws.Ec2.html">Ec2<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Ec2.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Ec2.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.Ec2.Iterator.html">Iterator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.ElasticBeanstalk.html">ElasticBeanstalk<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.ElasticBeanstalk.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.ElasticBeanstalk.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.ElasticLoadBalancing.html">ElasticLoadBalancing<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.ElasticLoadBalancing.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.ElasticTranscoder.html">ElasticTranscoder<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.ElasticTranscoder.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Glacier.html">Glacier<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Glacier.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Glacier.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.Glacier.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Glacier.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Aws.Iam.html">Iam<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Iam.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Iam.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Route53.html">Route53<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Route53.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Route53.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.S3.html">S3<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.S3.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.S3.Exception.html">Exception<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.S3.Exception.Parser.html">Parser</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.S3.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.S3.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.S3.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Aws.Ses.html">Ses<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Ses.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Ses.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.SimpleDb.html">SimpleDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.SimpleDb.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Sns.html">Sns<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Sns.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Sqs.html">Sqs<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Sqs.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Sqs.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Sts.html">Sts<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Sts.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Swf.html">Swf<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Swf.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Swf.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.AutoScaling.html">AutoScaling<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.AutoScaling.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.CloudFront.html">CloudFront<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.CloudFront.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.CloudFront.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.CloudWatch.html">CloudWatch<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.CloudWatch.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Common.Client.html">Client</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Credentials.html">Credentials</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Exception.html">Exception<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Common.Exception.Parser.html">Parser</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Common.Hash.html">Hash</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.InstanceMetadata.html">InstanceMetadata</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Common.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Common.Region.html">Region</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Signature.html">Signature</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DataPipeline.html">DataPipeline<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DataPipeline.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.html">DynamoDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Model.BatchRequest.html">BatchRequest</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Session.LockingStrategy.html">LockingStrategy</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Ec2.html">Ec2<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Ec2.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Ec2.Iterator.html">Iterator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.ElasticBeanstalk.html">ElasticBeanstalk<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.ElasticBeanstalk.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.ElasticLoadBalancing.html">ElasticLoadBalancing<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.ElasticLoadBalancing.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.ElasticTranscoder.html">ElasticTranscoder<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.ElasticTranscoder.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Glacier.html">Glacier<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Glacier.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Glacier.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Glacier.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Glacier.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Iam.html">Iam<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Iam.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Route53.html">Route53<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Route53.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.S3.html">S3<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.S3.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.S3.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.S3.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.S3.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.S3.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.S3.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Ses.html">Ses<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Ses.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.SimpleDb.html">SimpleDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.SimpleDb.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Sns.html">Sns<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Sns.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Sqs.html">Sqs<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Sqs.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Sts.html">Sts<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Sts.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Swf.html">Swf<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Swf.Integration.html">Integration</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Composer.html">Composer<span></span></a>
+						<ul>
+				<li><a href="namespace-Composer.Autoload.html">Autoload</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Guzzle.html">Guzzle<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Batch.html">Batch<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Batch.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Common.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Guzzle.Http.html">Http<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Http.Curl.html">Curl</a>
+						</li>
+				<li><a href="namespace-Guzzle.Http.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Http.Message.html">Message</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Inflection.html">Inflection</a>
+						</li>
+				<li><a href="namespace-Guzzle.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Guzzle.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.html">Parser<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Parser.Cookie.html">Cookie</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.Message.html">Message</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.UriTemplate.html">UriTemplate</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.Url.html">Url</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Plugin.Async.html">Async</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Backoff.html">Backoff</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Cookie.html">Cookie<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Plugin.Cookie.CookieJar.html">CookieJar</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Cookie.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Plugin.CurlAuth.html">CurlAuth</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.History.html">History</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Md5.html">Md5</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Mock.html">Mock</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Oauth.html">Oauth</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Service.html">Service<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Service.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Command.html">Command<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Service.Command.Factory.html">Factory</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Command.LocationVisitor.html">LocationVisitor<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Service.Command.LocationVisitor.Request.html">Request</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Command.LocationVisitor.Response.html">Response</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Guzzle.Service.Description.html">Description</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Resource.html">Resource</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Stream.html">Stream</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Batch.html">Batch</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Common.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Common.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Http.html">Http<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Http.Curl.html">Curl</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Http.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Http.Message.html">Message</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Inflection.html">Inflection</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Message.html">Message</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Mock.html">Mock</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Parser.html">Parser<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Parser.Cookie.html">Cookie</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Parser.Message.html">Message</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Parser.Url.html">Url</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Parsers.html">Parsers<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Parsers.UriTemplate.html">UriTemplate</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Async.html">Async</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Backoff.html">Backoff</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Cookie.html">Cookie<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Cookie.CookieJar.html">CookieJar</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.CurlAuth.html">CurlAuth</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.History.html">History</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Md5.html">Md5</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Mock.html">Mock</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Oauth.html">Oauth</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Redirect.html">Redirect</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.html">Service<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.html">Command<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.LocationVisitor.html">LocationVisitor<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.LocationVisitor.Request.html">Request</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.LocationVisitor.Response.html">Response</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.Description.html">Description</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.html">Mock<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.Command.html">Command<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.Command.Sub.html">Sub</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.Model.html">Model</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.Resource.html">Resource</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Stream.html">Stream</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Symfony.html">Symfony<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.html">Component<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.html">Tests</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Guzzle.Http.AbstractEntityBodyDecorator.html">AbstractEntityBodyDecorator</a></li>
+				<li><a href="class-Guzzle.Http.Client.html">Client</a></li>
+				<li><a href="class-Guzzle.Http.EntityBody.html">EntityBody</a></li>
+				<li><a href="class-Guzzle.Http.IoEmittingEntityBody.html">IoEmittingEntityBody</a></li>
+				<li><a href="class-Guzzle.Http.Mimetypes.html">Mimetypes</a></li>
+				<li class="active"><a href="class-Guzzle.Http.QueryString.html">QueryString</a></li>
+				<li><a href="class-Guzzle.Http.ReadLimitEntityBody.html">ReadLimitEntityBody</a></li>
+				<li><a href="class-Guzzle.Http.RedirectPlugin.html">RedirectPlugin</a></li>
+				<li><a href="class-Guzzle.Http.Url.html">Url</a></li>
+				<li><a href="class-Guzzle.Http.Utils.html">Utils</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Guzzle.Http.ClientInterface.html">ClientInterface</a></li>
+				<li><a href="class-Guzzle.Http.EntityBodyInterface.html">EntityBodyInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Guzzle.Http.html" title="Summary of Guzzle\Http"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class QueryString</h1>
+
+
+	<div class="description">
+	
+<p>Query string object to handle managing query string parameters and
+aggregating those parameters together as a string.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Guzzle.Common.Collection.html"><span>Guzzle\Common\Collection</span></a>
+			
+			 implements 
+				<a href="class-ArrayAccess.html"><span>ArrayAccess</span></a>, 
+			
+				<a href="class-IteratorAggregate.html"><span>IteratorAggregate</span></a>, 
+			
+				<a href="class-Countable.html"><span>Countable</span></a>, 
+			
+				<a href="class-Guzzle.Common.ToArrayInterface.html"><span>Guzzle\Common\ToArrayInterface</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Guzzle\Http\QueryString</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Guzzle.html">Guzzle</a>\<a href="namespace-Guzzle.Http.html">Http</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-Guzzle.Http.QueryString.html#7-320" title="Go to source code">aws-sdk/vendor/guzzle/guzzle/src/Guzzle/Http/QueryString.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="fromString" id="_fromString">
+
+		<td class="attributes"><code>
+			 public static
+			<code><a href="class-Guzzle.Http.QueryString.html">Guzzle\Http\QueryString</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fromString">#</a>
+		<code><a href="source-class-Guzzle.Http.QueryString.html#42-74" title="Go to source code">fromString</a>( <span>string <var>$query</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parse a query string into a QueryString object</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse a query string into a QueryString object</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code>string</code><br>$query Query string to parse</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Http.QueryString.html">Guzzle\Http\QueryString</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__toString" id="___toString">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___toString">#</a>
+		<code><a href="source-class-Guzzle.Http.QueryString.html#76-106" title="Go to source code">__toString</a>( )</code>
+
+		<div class="description short">
+			
+<p>Convert the query string parameters to a query string string</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Convert the query string parameters to a query string string</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="aggregateUsingPhp" id="_aggregateUsingPhp">
+
+		<td class="attributes"><code>
+			 public static
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_aggregateUsingPhp">#</a>
+		<code><a href="source-class-Guzzle.Http.QueryString.html#108-135" title="Go to source code">aggregateUsingPhp</a>( <span>string <var>$key</var></span>, <span>array <var>$value</var></span>, <span>boolean <var>$encode</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Aggregate multi-valued parameters using PHP style syntax</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Aggregate multi-valued parameters using PHP style syntax</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key The name of the query string parameter</dd>
+					<dt><var>$value</var></dt>
+					<dd><code>array</code><br>$value The values of the parameter</dd>
+					<dt><var>$encode</var></dt>
+					<dd><code>boolean</code><br>$encode Set to TRUE to encode field names and values</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>Returns an array of the combined values<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="aggregateUsingComma" id="_aggregateUsingComma">
+
+		<td class="attributes"><code>
+			 public static
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_aggregateUsingComma">#</a>
+		<code><a href="source-class-Guzzle.Http.QueryString.html#137-151" title="Go to source code">aggregateUsingComma</a>( <span>string <var>$key</var></span>, <span>array <var>$value</var></span>, <span>boolean <var>$encode</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Aggregate multi-valued parameters by joining the values using a comma</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Aggregate multi-valued parameters by joining the values using a comma</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key The name of the query string parameter</dd>
+					<dt><var>$value</var></dt>
+					<dd><code>array</code><br>$value The values of the parameter</dd>
+					<dt><var>$encode</var></dt>
+					<dd><code>boolean</code><br>$encode Set to TRUE to encode field names and values</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>Returns an array of the combined values<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="aggregateUsingDuplicates" id="_aggregateUsingDuplicates">
+
+		<td class="attributes"><code>
+			 public static
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_aggregateUsingDuplicates">#</a>
+		<code><a href="source-class-Guzzle.Http.QueryString.html#153-169" title="Go to source code">aggregateUsingDuplicates</a>( <span>string <var>$key</var></span>, <span>array <var>$value</var></span>, <span>boolean <var>$encode</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Aggregate multi-valued parameters using duplicate values in a query
+string</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Aggregate multi-valued parameters using duplicate values in a query
+string</p>
+
+<p>Example: <a
+href="http://test.com?q=1&amp;q=2">http://test.com?q=1&q=2</a></p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key The name of the query string parameter</dd>
+					<dt><var>$value</var></dt>
+					<dd><code>array</code><br>$value The values of the parameter</dd>
+					<dt><var>$encode</var></dt>
+					<dd><code>boolean</code><br>$encode Set to TRUE to encode field names and values</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>Returns an array of the combined values<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFieldSeparator" id="_getFieldSeparator">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFieldSeparator">#</a>
+		<code><a href="source-class-Guzzle.Http.QueryString.html#171-179" title="Go to source code">getFieldSeparator</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the query string field separator</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the query string field separator</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPrefix" id="_getPrefix">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPrefix">#</a>
+		<code><a href="source-class-Guzzle.Http.QueryString.html#181-189" title="Go to source code">getPrefix</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the query string prefix</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the query string prefix</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getValueSeparator" id="_getValueSeparator">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getValueSeparator">#</a>
+		<code><a href="source-class-Guzzle.Http.QueryString.html#191-199" title="Go to source code">getValueSeparator</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the query string value separator</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the query string value separator</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isUrlEncoding" id="_isUrlEncoding">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isUrlEncoding">#</a>
+		<code><a href="source-class-Guzzle.Http.QueryString.html#201-209" title="Go to source code">isUrlEncoding</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns whether or not field names and values will be urlencoded</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns whether or not field names and values will be urlencoded</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAggregateFunction" id="_setAggregateFunction">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Guzzle.Http.QueryString.html">Guzzle\Http\QueryString</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAggregateFunction">#</a>
+		<code><a href="source-class-Guzzle.Http.QueryString.html#211-225" title="Go to source code">setAggregateFunction</a>( <span>callable|null <var>$callback</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Provide a function for combining multi-valued query string parameters into a
+single or multiple fields</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Provide a function for combining multi-valued query string parameters into a
+single or multiple fields</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$callback</var></dt>
+					<dd><code>callable|null</code><br>$callback A function or callback array that accepts a $key, $value,
+$encodeFields, and $encodeValues as arguments and returns an associative array
+containing the combined values. Set to null to remove any custom aggregator.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Http.QueryString.html">Guzzle\Http\QueryString</a></code></code><br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						<code><code><a href="class-Guzzle.Http.QueryString.html#_aggregateUsingComma">Guzzle\Http\QueryString::aggregateUsingComma()</a></code></code><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="useUrlEncoding" id="_useUrlEncoding">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Guzzle.Http.QueryString.html">Guzzle\Http\QueryString</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_useUrlEncoding">#</a>
+		<code><a href="source-class-Guzzle.Http.QueryString.html#227-239" title="Go to source code">useUrlEncoding</a>( <span>boolean <var>$encode</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set whether or not field names and values should be rawurlencoded</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set whether or not field names and values should be rawurlencoded</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$encode</var></dt>
+					<dd><code>boolean</code><br>$encode Set whether or not to encode</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Http.QueryString.html">Guzzle\Http\QueryString</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setFieldSeparator" id="_setFieldSeparator">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Guzzle.Http.QueryString.html">Guzzle\Http\QueryString</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setFieldSeparator">#</a>
+		<code><a href="source-class-Guzzle.Http.QueryString.html#241-253" title="Go to source code">setFieldSeparator</a>( <span>string <var>$separator</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the query string separator</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the query string separator</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$separator</var></dt>
+					<dd><code>string</code><br>$separator The query string separator that will separate fields</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Http.QueryString.html">Guzzle\Http\QueryString</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPrefix" id="_setPrefix">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Guzzle.Http.QueryString.html">Guzzle\Http\QueryString</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPrefix">#</a>
+		<code><a href="source-class-Guzzle.Http.QueryString.html#255-267" title="Go to source code">setPrefix</a>( <span>string <var>$prefix</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the query string prefix</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the query string prefix</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$prefix</var></dt>
+					<dd><code>string</code><br>$prefix Prefix to use with the query string (e.g. '?')</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Http.QueryString.html">Guzzle\Http\QueryString</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setValueSeparator" id="_setValueSeparator">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Guzzle.Http.QueryString.html">Guzzle\Http\QueryString</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setValueSeparator">#</a>
+		<code><a href="source-class-Guzzle.Http.QueryString.html#269-281" title="Go to source code">setValueSeparator</a>( <span>string <var>$separator</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the query string value separator</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the query string value separator</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$separator</var></dt>
+					<dd><code>string</code><br>$separator The query string separator that will separate values from fields</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Http.QueryString.html">Guzzle\Http\QueryString</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="urlEncode" id="_urlEncode">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_urlEncode">#</a>
+		<code><a href="source-class-Guzzle.Http.QueryString.html#283-291" title="Go to source code">urlEncode</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns an array of url encoded field names and values</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns an array of url encoded field names and values</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="encodeData" id="_encodeData">
+
+		<td class="attributes"><code>
+			 protected 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_encodeData">#</a>
+		<code><a href="source-class-Guzzle.Http.QueryString.html#293-319" title="Go to source code">encodeData</a>( <span>array <var>$data</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Url encode parameter data.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Url encode parameter data.</p>
+
+<p>If a parameter value is an array and no aggregator has been set, the values
+of the array will be converted into a PHP compatible form array. If an
+aggregator is set, the values will be converted using the aggregator
+function</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><code>array</code><br>$data The data to encode</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>Returns an array of encoded values and keys<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Guzzle.Common.Collection.html#methods">Guzzle\Common\Collection</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Guzzle.Common.Collection.html#___construct">__construct()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_add">add()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_clear">clear()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_count">count()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_filter">filter()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_fromConfig">fromConfig()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_get">get()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_getAll">getAll()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_getIterator">getIterator()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_getKeys">getKeys()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_getPath">getPath()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_hasKey">hasKey()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_hasValue">hasValue()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_inject">inject()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_keySearch">keySearch()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_map">map()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_merge">merge()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_offsetExists">offsetExists()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_offsetGet">offsetGet()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_offsetSet">offsetSet()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_offsetUnset">offsetUnset()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_overwriteWith">overwriteWith()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_remove">remove()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_replace">replace()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_set">set()</a>, 
+			<a href="class-Guzzle.Common.Collection.html#_toArray">toArray()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="BLANK" id="BLANK">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-Guzzle.Http.QueryString.html#12-15" title="Go to source code"><b>BLANK</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">&quot;_guzzle_blank_&quot;</span></code></td>
+		<td class="description"><div>
+			<a href="#BLANK" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Constant used to create blank query string values (e.g. ?foo)</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Constant used to create blank query string values (e.g. ?foo)</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="fieldSeparator" id="$fieldSeparator">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Guzzle.Http.QueryString.html#17-20" title="Go to source code"><var>$fieldSeparator</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'&amp;'</span></code></td>
+		<td class="description"><div>
+			<a href="#$fieldSeparator" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The query string field separator (e.g. '&amp;')</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The query string field separator (e.g. '&amp;')</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="valueSeparator" id="$valueSeparator">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Guzzle.Http.QueryString.html#22-25" title="Go to source code"><var>$valueSeparator</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'='</span></code></td>
+		<td class="description"><div>
+			<a href="#$valueSeparator" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The query string value separator (e.g. '=')</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The query string value separator (e.g. '=')</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="prefix" id="$prefix">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Guzzle.Http.QueryString.html#27-30" title="Go to source code"><var>$prefix</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'?'</span></code></td>
+		<td class="description"><div>
+			<a href="#$prefix" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The query string prefix</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The query string prefix</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="urlEncode" id="$urlEncode">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Guzzle.Http.QueryString.html#32-35" title="Go to source code"><var>$urlEncode</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">true</span></code></td>
+		<td class="description"><div>
+			<a href="#$urlEncode" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>URL encode fields and values?</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>URL encode fields and values?</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="aggregator" id="$aggregator">
+		<td class="attributes"><code>
+			protected  
+			callable
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Guzzle.Http.QueryString.html#37-40" title="Go to source code"><var>$aggregator</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(__CLASS__, <span class="php-quote">'aggregateUsingPhp'</span>)</code></td>
+		<td class="description"><div>
+			<a href="#$aggregator" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>A callback function for combining multi-valued query string values</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>A callback function for combining multi-valued query string values</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Guzzle.Common.Collection.html#properties">Guzzle\Common\Collection</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Guzzle.Common.Collection.html#$data"><var>$data</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		YiiAWS API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

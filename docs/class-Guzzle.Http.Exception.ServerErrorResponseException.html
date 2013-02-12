@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Guzzle\Http\Exception\ServerErrorResponseException | YiiAWS</title>
+
+	<script type="text/javascript" src="resources/combined.js?709491018"></script>
+	<script type="text/javascript" src="elementlist.js?3541143681"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-Aws.html">Aws<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.AutoScaling.html">AutoScaling<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.AutoScaling.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.AutoScaling.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.CloudFront.html">CloudFront<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.CloudFront.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.CloudFront.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.CloudWatch.html">CloudWatch<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.CloudWatch.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.CloudWatch.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.Client.html">Client</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Credentials.html">Credentials</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Exception.html">Exception<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.Exception.Parser.html">Parser</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.Hash.html">Hash</a>
+						</li>
+				<li><a href="namespace-Aws.Common.InstanceMetadata.html">InstanceMetadata<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.InstanceMetadata.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.Region.html">Region</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Signature.html">Signature</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.DataPipeline.html">DataPipeline<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DataPipeline.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.DataPipeline.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.DynamoDb.html">DynamoDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DynamoDb.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.DynamoDb.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.DynamoDb.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.DynamoDb.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DynamoDb.Model.BatchRequest.html">BatchRequest</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.DynamoDb.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DynamoDb.Session.LockingStrategy.html">LockingStrategy</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Aws.Ec2.html">Ec2<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Ec2.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Ec2.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.Ec2.Iterator.html">Iterator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.ElasticBeanstalk.html">ElasticBeanstalk<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.ElasticBeanstalk.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.ElasticBeanstalk.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.ElasticLoadBalancing.html">ElasticLoadBalancing<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.ElasticLoadBalancing.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.ElasticTranscoder.html">ElasticTranscoder<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.ElasticTranscoder.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Glacier.html">Glacier<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Glacier.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Glacier.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.Glacier.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Glacier.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Aws.Iam.html">Iam<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Iam.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Iam.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Route53.html">Route53<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Route53.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Route53.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.S3.html">S3<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.S3.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.S3.Exception.html">Exception<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.S3.Exception.Parser.html">Parser</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.S3.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.S3.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.S3.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Aws.Ses.html">Ses<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Ses.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Ses.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.SimpleDb.html">SimpleDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.SimpleDb.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Sns.html">Sns<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Sns.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Sqs.html">Sqs<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Sqs.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Sqs.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Sts.html">Sts<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Sts.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Swf.html">Swf<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Swf.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Swf.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.AutoScaling.html">AutoScaling<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.AutoScaling.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.CloudFront.html">CloudFront<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.CloudFront.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.CloudFront.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.CloudWatch.html">CloudWatch<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.CloudWatch.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Common.Client.html">Client</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Credentials.html">Credentials</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Exception.html">Exception<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Common.Exception.Parser.html">Parser</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Common.Hash.html">Hash</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.InstanceMetadata.html">InstanceMetadata</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Common.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Common.Region.html">Region</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Signature.html">Signature</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DataPipeline.html">DataPipeline<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DataPipeline.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.html">DynamoDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Model.BatchRequest.html">BatchRequest</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Session.LockingStrategy.html">LockingStrategy</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Ec2.html">Ec2<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Ec2.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Ec2.Iterator.html">Iterator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.ElasticBeanstalk.html">ElasticBeanstalk<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.ElasticBeanstalk.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.ElasticLoadBalancing.html">ElasticLoadBalancing<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.ElasticLoadBalancing.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.ElasticTranscoder.html">ElasticTranscoder<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.ElasticTranscoder.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Glacier.html">Glacier<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Glacier.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Glacier.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Glacier.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Glacier.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Iam.html">Iam<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Iam.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Route53.html">Route53<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Route53.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.S3.html">S3<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.S3.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.S3.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.S3.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.S3.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.S3.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.S3.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Ses.html">Ses<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Ses.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.SimpleDb.html">SimpleDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.SimpleDb.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Sns.html">Sns<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Sns.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Sqs.html">Sqs<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Sqs.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Sts.html">Sts<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Sts.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Swf.html">Swf<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Swf.Integration.html">Integration</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Composer.html">Composer<span></span></a>
+						<ul>
+				<li><a href="namespace-Composer.Autoload.html">Autoload</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Guzzle.html">Guzzle<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Batch.html">Batch<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Batch.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Common.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Guzzle.Http.html">Http<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Http.Curl.html">Curl</a>
+						</li>
+				<li class="active"><a href="namespace-Guzzle.Http.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Http.Message.html">Message</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Inflection.html">Inflection</a>
+						</li>
+				<li><a href="namespace-Guzzle.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Guzzle.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.html">Parser<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Parser.Cookie.html">Cookie</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.Message.html">Message</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.UriTemplate.html">UriTemplate</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.Url.html">Url</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Plugin.Async.html">Async</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Backoff.html">Backoff</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Cookie.html">Cookie<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Plugin.Cookie.CookieJar.html">CookieJar</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Cookie.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Plugin.CurlAuth.html">CurlAuth</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.History.html">History</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Md5.html">Md5</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Mock.html">Mock</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Oauth.html">Oauth</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Service.html">Service<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Service.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Command.html">Command<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Service.Command.Factory.html">Factory</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Command.LocationVisitor.html">LocationVisitor<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Service.Command.LocationVisitor.Request.html">Request</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Command.LocationVisitor.Response.html">Response</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Guzzle.Service.Description.html">Description</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Resource.html">Resource</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Stream.html">Stream</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Batch.html">Batch</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Common.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Common.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Http.html">Http<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Http.Curl.html">Curl</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Http.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Http.Message.html">Message</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Inflection.html">Inflection</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Message.html">Message</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Mock.html">Mock</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Parser.html">Parser<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Parser.Cookie.html">Cookie</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Parser.Message.html">Message</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Parser.Url.html">Url</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Parsers.html">Parsers<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Parsers.UriTemplate.html">UriTemplate</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Async.html">Async</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Backoff.html">Backoff</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Cookie.html">Cookie<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Cookie.CookieJar.html">CookieJar</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.CurlAuth.html">CurlAuth</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.History.html">History</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Md5.html">Md5</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Mock.html">Mock</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Oauth.html">Oauth</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Redirect.html">Redirect</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.html">Service<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.html">Command<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.LocationVisitor.html">LocationVisitor<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.LocationVisitor.Request.html">Request</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.LocationVisitor.Response.html">Response</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.Description.html">Description</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.html">Mock<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.Command.html">Command<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.Command.Sub.html">Sub</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.Model.html">Model</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.Resource.html">Resource</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Stream.html">Stream</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Symfony.html">Symfony<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.html">Component<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.html">Tests</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Guzzle.Http.Exception.HttpException.html">HttpException</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Guzzle.Http.Exception.BadResponseException.html">BadResponseException</a></li>
+				<li><a href="class-Guzzle.Http.Exception.ClientErrorResponseException.html">ClientErrorResponseException</a></li>
+				<li><a href="class-Guzzle.Http.Exception.CouldNotRewindStreamException.html">CouldNotRewindStreamException</a></li>
+				<li><a href="class-Guzzle.Http.Exception.CurlException.html">CurlException</a></li>
+				<li><a href="class-Guzzle.Http.Exception.MultiTransferException.html">MultiTransferException</a></li>
+				<li><a href="class-Guzzle.Http.Exception.RequestException.html">RequestException</a></li>
+				<li class="active"><a href="class-Guzzle.Http.Exception.ServerErrorResponseException.html">ServerErrorResponseException</a></li>
+				<li><a href="class-Guzzle.Http.Exception.TooManyRedirectsException.html">TooManyRedirectsException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Guzzle.Http.Exception.html" title="Summary of Guzzle\Http\Exception"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ServerErrorResponseException</h1>
+
+
+	<div class="description">
+	
+<p>Exception when a server error is encountered (5xx codes)</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Exception.html"><span>Exception</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-RuntimeException.html"><span>RuntimeException</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-Guzzle.Common.Exception.RuntimeException.html"><span>Guzzle\Common\Exception\RuntimeException</span></a>
+			
+			 implements 
+				<a href="class-Guzzle.Common.Exception.GuzzleException.html"><span>Guzzle\Common\Exception\GuzzleException</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:90px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-Guzzle.Http.Exception.RequestException.html"><span>Guzzle\Http\Exception\RequestException</span></a>
+			
+			 implements 
+				<a href="class-Guzzle.Http.Exception.HttpException.html"><span>Guzzle\Http\Exception\HttpException</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:120px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-Guzzle.Http.Exception.BadResponseException.html"><span>Guzzle\Http\Exception\BadResponseException</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:150px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Guzzle\Http\Exception\ServerErrorResponseException</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Guzzle.html">Guzzle</a>\<a href="namespace-Guzzle.Http.html">Http</a>\<a href="namespace-Guzzle.Http.Exception.html">Exception</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-Guzzle.Http.Exception.ServerErrorResponseException.html#5-8" title="Go to source code">aws-sdk/vendor/guzzle/guzzle/src/Guzzle/Http/Exception/ServerErrorResponseException.php</a><br />
+	</div>
+
+
+
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Guzzle.Http.Exception.BadResponseException.html#methods">Guzzle\Http\Exception\BadResponseException</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Guzzle.Http.Exception.BadResponseException.html#_factory">factory()</a>, 
+			<a href="class-Guzzle.Http.Exception.BadResponseException.html#_getResponse">getResponse()</a>, 
+			<a href="class-Guzzle.Http.Exception.BadResponseException.html#_setResponse">setResponse()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Guzzle.Http.Exception.RequestException.html#methods">Guzzle\Http\Exception\RequestException</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Guzzle.Http.Exception.RequestException.html#_getRequest">getRequest()</a>, 
+			<a href="class-Guzzle.Http.Exception.RequestException.html#_setRequest">setRequest()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Exception.html#methods">Exception</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Exception.html#___construct">__construct()</a>, 
+			<a href="class-Exception.html#___toString">__toString()</a>, 
+			<a href="class-Exception.html#_getCode">getCode()</a>, 
+			<a href="class-Exception.html#_getFile">getFile()</a>, 
+			<a href="class-Exception.html#_getLine">getLine()</a>, 
+			<a href="class-Exception.html#_getMessage">getMessage()</a>, 
+			<a href="class-Exception.html#_getPrevious">getPrevious()</a>, 
+			<a href="class-Exception.html#_getTrace">getTrace()</a>, 
+			<a href="class-Exception.html#_getTraceAsString">getTraceAsString()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Guzzle.Http.Exception.RequestException.html#properties">Guzzle\Http\Exception\RequestException</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Guzzle.Http.Exception.RequestException.html#$request"><var>$request</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Exception.html#properties">Exception</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Exception.html#$code"><var>$code</var></a>, 
+			<a href="class-Exception.html#$file"><var>$file</var></a>, 
+			<a href="class-Exception.html#$line"><var>$line</var></a>, 
+			<a href="class-Exception.html#$message"><var>$message</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		YiiAWS API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

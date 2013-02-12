@@ -1,0 +1,1772 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Aws\Common\Client\ClientBuilder | YiiAWS</title>
+
+	<script type="text/javascript" src="resources/combined.js?709491018"></script>
+	<script type="text/javascript" src="elementlist.js?3541143681"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Aws.html">Aws<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.AutoScaling.html">AutoScaling<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.AutoScaling.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.AutoScaling.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.CloudFront.html">CloudFront<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.CloudFront.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.CloudFront.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.CloudWatch.html">CloudWatch<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.CloudWatch.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.CloudWatch.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Aws.Common.html">Common<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Aws.Common.Client.html">Client</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Credentials.html">Credentials</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Exception.html">Exception<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.Exception.Parser.html">Parser</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.Hash.html">Hash</a>
+						</li>
+				<li><a href="namespace-Aws.Common.InstanceMetadata.html">InstanceMetadata<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.InstanceMetadata.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.Region.html">Region</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Signature.html">Signature</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.DataPipeline.html">DataPipeline<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DataPipeline.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.DataPipeline.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.DynamoDb.html">DynamoDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DynamoDb.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.DynamoDb.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.DynamoDb.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.DynamoDb.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DynamoDb.Model.BatchRequest.html">BatchRequest</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.DynamoDb.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DynamoDb.Session.LockingStrategy.html">LockingStrategy</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Aws.Ec2.html">Ec2<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Ec2.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Ec2.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.Ec2.Iterator.html">Iterator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.ElasticBeanstalk.html">ElasticBeanstalk<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.ElasticBeanstalk.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.ElasticBeanstalk.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.ElasticLoadBalancing.html">ElasticLoadBalancing<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.ElasticLoadBalancing.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.ElasticTranscoder.html">ElasticTranscoder<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.ElasticTranscoder.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Glacier.html">Glacier<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Glacier.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Glacier.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.Glacier.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Glacier.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Aws.Iam.html">Iam<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Iam.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Iam.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Route53.html">Route53<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Route53.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Route53.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.S3.html">S3<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.S3.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.S3.Exception.html">Exception<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.S3.Exception.Parser.html">Parser</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.S3.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.S3.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.S3.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Aws.Ses.html">Ses<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Ses.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Ses.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.SimpleDb.html">SimpleDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.SimpleDb.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Sns.html">Sns<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Sns.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Sqs.html">Sqs<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Sqs.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Sqs.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Sts.html">Sts<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Sts.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Swf.html">Swf<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Swf.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Swf.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.AutoScaling.html">AutoScaling<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.AutoScaling.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.CloudFront.html">CloudFront<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.CloudFront.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.CloudFront.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.CloudWatch.html">CloudWatch<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.CloudWatch.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Common.Client.html">Client</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Credentials.html">Credentials</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Exception.html">Exception<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Common.Exception.Parser.html">Parser</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Common.Hash.html">Hash</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.InstanceMetadata.html">InstanceMetadata</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Common.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Common.Region.html">Region</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Signature.html">Signature</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DataPipeline.html">DataPipeline<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DataPipeline.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.html">DynamoDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Model.BatchRequest.html">BatchRequest</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Session.LockingStrategy.html">LockingStrategy</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Ec2.html">Ec2<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Ec2.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Ec2.Iterator.html">Iterator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.ElasticBeanstalk.html">ElasticBeanstalk<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.ElasticBeanstalk.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.ElasticLoadBalancing.html">ElasticLoadBalancing<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.ElasticLoadBalancing.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.ElasticTranscoder.html">ElasticTranscoder<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.ElasticTranscoder.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Glacier.html">Glacier<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Glacier.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Glacier.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Glacier.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Glacier.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Iam.html">Iam<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Iam.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Route53.html">Route53<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Route53.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.S3.html">S3<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.S3.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.S3.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.S3.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.S3.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.S3.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.S3.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Ses.html">Ses<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Ses.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.SimpleDb.html">SimpleDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.SimpleDb.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Sns.html">Sns<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Sns.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Sqs.html">Sqs<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Sqs.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Sts.html">Sts<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Sts.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Swf.html">Swf<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Swf.Integration.html">Integration</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Composer.html">Composer<span></span></a>
+						<ul>
+				<li><a href="namespace-Composer.Autoload.html">Autoload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.html">Guzzle<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Batch.html">Batch<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Batch.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Common.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Http.html">Http<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Http.Curl.html">Curl</a>
+						</li>
+				<li><a href="namespace-Guzzle.Http.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Http.Message.html">Message</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Inflection.html">Inflection</a>
+						</li>
+				<li><a href="namespace-Guzzle.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Guzzle.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.html">Parser<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Parser.Cookie.html">Cookie</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.Message.html">Message</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.UriTemplate.html">UriTemplate</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.Url.html">Url</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Plugin.Async.html">Async</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Backoff.html">Backoff</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Cookie.html">Cookie<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Plugin.Cookie.CookieJar.html">CookieJar</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Cookie.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Plugin.CurlAuth.html">CurlAuth</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.History.html">History</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Md5.html">Md5</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Mock.html">Mock</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Oauth.html">Oauth</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Service.html">Service<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Service.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Command.html">Command<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Service.Command.Factory.html">Factory</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Command.LocationVisitor.html">LocationVisitor<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Service.Command.LocationVisitor.Request.html">Request</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Command.LocationVisitor.Response.html">Response</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Guzzle.Service.Description.html">Description</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Resource.html">Resource</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Stream.html">Stream</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Batch.html">Batch</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Common.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Common.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Http.html">Http<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Http.Curl.html">Curl</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Http.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Http.Message.html">Message</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Inflection.html">Inflection</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Message.html">Message</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Mock.html">Mock</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Parser.html">Parser<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Parser.Cookie.html">Cookie</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Parser.Message.html">Message</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Parser.Url.html">Url</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Parsers.html">Parsers<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Parsers.UriTemplate.html">UriTemplate</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Async.html">Async</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Backoff.html">Backoff</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Cookie.html">Cookie<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Cookie.CookieJar.html">CookieJar</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.CurlAuth.html">CurlAuth</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.History.html">History</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Md5.html">Md5</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Mock.html">Mock</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Oauth.html">Oauth</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Redirect.html">Redirect</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.html">Service<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.html">Command<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.LocationVisitor.html">LocationVisitor<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.LocationVisitor.Request.html">Request</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.LocationVisitor.Response.html">Response</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.Description.html">Description</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.html">Mock<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.Command.html">Command<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.Command.Sub.html">Sub</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.Model.html">Model</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.Resource.html">Resource</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Stream.html">Stream</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Symfony.html">Symfony<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.html">Component<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.html">Tests</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Aws.Common.Client.AbstractClient.html">AbstractClient</a></li>
+				<li><a href="class-Aws.Common.Client.AbstractMissingFunctionOptionResolver.html">AbstractMissingFunctionOptionResolver</a></li>
+				<li><a href="class-Aws.Common.Client.BackoffOptionResolver.html">BackoffOptionResolver</a></li>
+				<li class="active"><a href="class-Aws.Common.Client.ClientBuilder.html">ClientBuilder</a></li>
+				<li><a href="class-Aws.Common.Client.CredentialsOptionResolver.html">CredentialsOptionResolver</a></li>
+				<li><a href="class-Aws.Common.Client.DefaultClient.html">DefaultClient</a></li>
+				<li><a href="class-Aws.Common.Client.UploadBodyListener.html">UploadBodyListener</a></li>
+				<li><a href="class-Aws.Common.Client.UserAgentListener.html">UserAgentListener</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Aws.Common.Client.AwsClientInterface.html">AwsClientInterface</a></li>
+				<li><a href="class-Aws.Common.Client.OptionResolverInterface.html">OptionResolverInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Aws.Common.Client.html" title="Summary of Aws\Common\Client"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ClientBuilder</h1>
+
+
+	<div class="description">
+	
+<p>Builder for creating AWS service clients</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Aws.html">Aws</a>\<a href="namespace-Aws.Common.html">Common</a>\<a href="namespace-Aws.Common.Client.html">Client</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-Aws.Common.Client.ClientBuilder.html#42-491" title="Go to source code">aws-sdk/src/Aws/Common/Client/ClientBuilder.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="factory" id="_factory">
+
+		<td class="attributes"><code>
+			 public static
+			<code><a href="class-Aws.Common.Client.ClientBuilder.html">Aws\Common\Client\ClientBuilder</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_factory">#</a>
+		<code><a href="source-class-Aws.Common.Client.ClientBuilder.html#102-112" title="Go to source code">factory</a>( <span>string <var>$namespace</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Factory method for creating the client builder</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Factory method for creating the client builder</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$namespace</var></dt>
+					<dd><code>string</code><br>$namespace The namespace of the client</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Aws.Common.Client.ClientBuilder.html">Aws\Common\Client\ClientBuilder</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Aws.Common.Client.ClientBuilder.html#114-122" title="Go to source code">__construct</a>( <span>string <var>$namespace</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Constructs a client builder</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Constructs a client builder</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$namespace</var></dt>
+					<dd><code>string</code><br>$namespace The namespace of the client</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setConfig" id="_setConfig">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Aws.Common.Client.ClientBuilder.html">Aws\Common\Client\ClientBuilder</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setConfig">#</a>
+		<code><a href="source-class-Aws.Common.Client.ClientBuilder.html#124-136" title="Go to source code">setConfig</a>( <span>array|<code><a href="class-Guzzle.Common.Collection.html">Guzzle\Common\Collection</a></code> <var>$config</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the config options</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the config options</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd><code>array|<code><a href="class-Guzzle.Common.Collection.html">Guzzle\Common\Collection</a></code></code><br>$config The config options</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Aws.Common.Client.ClientBuilder.html">Aws\Common\Client\ClientBuilder</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setConfigDefaults" id="_setConfigDefaults">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Aws.Common.Client.ClientBuilder.html">Aws\Common\Client\ClientBuilder</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setConfigDefaults">#</a>
+		<code><a href="source-class-Aws.Common.Client.ClientBuilder.html#138-150" title="Go to source code">setConfigDefaults</a>( <span>array|<code><a href="class-Guzzle.Common.Collection.html">Guzzle\Common\Collection</a></code> <var>$defaults</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the config options' defaults</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the config options' defaults</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$defaults</var></dt>
+					<dd><code>array|<code><a href="class-Guzzle.Common.Collection.html">Guzzle\Common\Collection</a></code></code><br>$defaults The default values</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Aws.Common.Client.ClientBuilder.html">Aws\Common\Client\ClientBuilder</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setConfigRequirements" id="_setConfigRequirements">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Aws.Common.Client.ClientBuilder.html">Aws\Common\Client\ClientBuilder</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setConfigRequirements">#</a>
+		<code><a href="source-class-Aws.Common.Client.ClientBuilder.html#152-164" title="Go to source code">setConfigRequirements</a>( <span>array|<code><a href="class-Guzzle.Common.Collection.html">Guzzle\Common\Collection</a></code> <var>$required</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the required config options</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the required config options</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$required</var></dt>
+					<dd><code>array|<code><a href="class-Guzzle.Common.Collection.html">Guzzle\Common\Collection</a></code></code><br>$required The required config options</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Aws.Common.Client.ClientBuilder.html">Aws\Common\Client\ClientBuilder</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCredentialsResolver" id="_setCredentialsResolver">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Aws.Common.Client.ClientBuilder.html">Aws\Common\Client\ClientBuilder</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCredentialsResolver">#</a>
+		<code><a href="source-class-Aws.Common.Client.ClientBuilder.html#166-178" title="Go to source code">setCredentialsResolver</a>( <span><code><a href="class-Aws.Common.Client.CredentialsOptionResolver.html">Aws\Common\Client\CredentialsOptionResolver</a></code> <var>$credentialsResolver</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the credential resolver</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the credential resolver</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$credentialsResolver</var></dt>
+					<dd><code><code><a href="class-Aws.Common.Client.CredentialsOptionResolver.html">Aws\Common\Client\CredentialsOptionResolver</a></code></code><br>$credentialsResolver The credential resolver</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Aws.Common.Client.ClientBuilder.html">Aws\Common\Client\ClientBuilder</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addClientResolver" id="_addClientResolver">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Aws.Common.Client.ClientBuilder.html">Aws\Common\Client\ClientBuilder</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addClientResolver">#</a>
+		<code><a href="source-class-Aws.Common.Client.ClientBuilder.html#180-194" title="Go to source code">addClientResolver</a>( <span><code><a href="class-Aws.Common.Client.OptionResolverInterface.html">Aws\Common\Client\OptionResolverInterface</a></code> <var>$clientResolver</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds a client resolver. The most common case is adding a custom exponential
+backoff strategy. If an exponential backoff strategy is not provided, then a
+default one will be used.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds a client resolver. The most common case is adding a custom exponential
+backoff strategy. If an exponential backoff strategy is not provided, then a
+default one will be used.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$clientResolver</var></dt>
+					<dd><code><code><a href="class-Aws.Common.Client.OptionResolverInterface.html">Aws\Common\Client\OptionResolverInterface</a></code></code><br>$clientResolver A client resolver</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Aws.Common.Client.ClientBuilder.html">Aws\Common\Client\ClientBuilder</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setExceptionParser" id="_setExceptionParser">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Aws.Common.Client.ClientBuilder.html">Aws\Common\Client\ClientBuilder</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setExceptionParser">#</a>
+		<code><a href="source-class-Aws.Common.Client.ClientBuilder.html#196-209" title="Go to source code">setExceptionParser</a>( <span><code><a href="class-Aws.Common.Exception.Parser.ExceptionParserInterface.html">Aws\Common\Exception\Parser\ExceptionParserInterface</a></code> <var>$parser</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the exception parser. If one is not provided the builder will use the
+default XML exception parser.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the exception parser. If one is not provided the builder will use the
+default XML exception parser.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parser</var></dt>
+					<dd><code><code><a href="class-Aws.Common.Exception.Parser.ExceptionParserInterface.html">Aws\Common\Exception\Parser\ExceptionParserInterface</a></code></code><br>$parser The exception parser</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Aws.Common.Client.ClientBuilder.html">Aws\Common\Client\ClientBuilder</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setIteratorsConfig" id="_setIteratorsConfig">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Aws.Common.Client.ClientBuilder.html">Aws\Common\Client\ClientBuilder</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setIteratorsConfig">#</a>
+		<code><a href="source-class-Aws.Common.Client.ClientBuilder.html#211-223" title="Go to source code">setIteratorsConfig</a>( <span>array <var>$config</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the configuration for the client's iterators</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the configuration for the client's iterators</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd><code>array</code><br>$config Configuration data for client's iterators</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Aws.Common.Client.ClientBuilder.html">Aws\Common\Client\ClientBuilder</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="build" id="_build">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Aws.Common.Client.AwsClientInterface.html">Aws\Common\Client\AwsClientInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_build">#</a>
+		<code><a href="source-class-Aws.Common.Client.ClientBuilder.html#225-310" title="Go to source code">build</a>( )</code>
+
+		<div class="description short">
+			
+<p>Performs the building logic using all of the parameters that have been set
+and falling back to default values. Returns an instantiate service client with
+credentials prepared and plugins attached.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Performs the building logic using all of the parameters that have been set
+and falling back to default values. Returns an instantiate service client with
+credentials prepared and plugins attached.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Aws.Common.Client.AwsClientInterface.html">Aws\Common\Client\AwsClientInterface</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Aws.Common.Exception.InvalidArgumentException.html">Aws\Common\Exception\InvalidArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addBaseUrlToConfig" id="_addBaseUrlToConfig">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addBaseUrlToConfig">#</a>
+		<code><a href="source-class-Aws.Common.Client.ClientBuilder.html#312-332" title="Go to source code">addBaseUrlToConfig</a>( <span><code><a href="class-Guzzle.Common.Collection.html">Guzzle\Common\Collection</a></code> <var>$config</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a base URL to the client of a region, scheme, and service were provided
+instead</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a base URL to the client of a region, scheme, and service were provided
+instead</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd><code><code><a href="class-Guzzle.Common.Collection.html">Guzzle\Common\Collection</a></code></code><br>$config Config object</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Aws.Common.Exception.InvalidArgumentException.html">Aws\Common\Exception\InvalidArgumentException</a></code></code><br>if required parameters are not set<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDefaultCredentialsResolver" id="_getDefaultCredentialsResolver">
+
+		<td class="attributes"><code>
+			 protected 
+			<code><a href="class-Aws.Common.Client.CredentialsOptionResolver.html">Aws\Common\Client\CredentialsOptionResolver</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDefaultCredentialsResolver">#</a>
+		<code><a href="source-class-Aws.Common.Client.ClientBuilder.html#334-344" title="Go to source code">getDefaultCredentialsResolver</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the default credential resolver for a client</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the default credential resolver for a client</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Aws.Common.Client.CredentialsOptionResolver.html">Aws\Common\Client\CredentialsOptionResolver</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDefaultBackoffResolver" id="_getDefaultBackoffResolver">
+
+		<td class="attributes"><code>
+			 protected 
+			<code><a href="class-Aws.Common.Client.BackoffOptionResolver.html">Aws\Common\Client\BackoffOptionResolver</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDefaultBackoffResolver">#</a>
+		<code><a href="source-class-Aws.Common.Client.ClientBuilder.html#346-356" title="Go to source code">getDefaultBackoffResolver</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the default exponential backoff plugin for a client</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the default exponential backoff plugin for a client</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Aws.Common.Client.BackoffOptionResolver.html">Aws\Common\Client\BackoffOptionResolver</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasBackoffOptionResolver" id="_hasBackoffOptionResolver">
+
+		<td class="attributes"><code>
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasBackoffOptionResolver">#</a>
+		<code><a href="source-class-Aws.Common.Client.ClientBuilder.html#358-372" title="Go to source code">hasBackoffOptionResolver</a>( )</code>
+
+		<div class="description short">
+			
+<p>Determines whether or not an exponential backoff plugin has been added to the
+builder</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determines whether or not an exponential backoff plugin has been added to the
+builder</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="processArray" id="_processArray">
+
+		<td class="attributes"><code>
+			 protected 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_processArray">#</a>
+		<code><a href="source-class-Aws.Common.Client.ClientBuilder.html#374-393" title="Go to source code">processArray</a>( <span>array|<code><a href="class-Guzzle.Common.Collection.html">Guzzle\Common\Collection</a></code> <var>$array</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Ensures that an array (e.g. for config data) is actually in array form</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Ensures that an array (e.g. for config data) is actually in array form</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$array</var></dt>
+					<dd><code>array|<code><a href="class-Guzzle.Common.Collection.html">Guzzle\Common\Collection</a></code></code><br>$array The array data</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Aws.Common.Exception.InvalidArgumentException.html">Aws\Common\Exception\InvalidArgumentException</a></code></code><br>if the arg is not an array or Collection<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDefaultEndpointProvider" id="_getDefaultEndpointProvider">
+
+		<td class="attributes"><code>
+			 protected 
+			<code><a href="class-Aws.Common.Region.EndpointProviderInterface.html">Aws\Common\Region\EndpointProviderInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDefaultEndpointProvider">#</a>
+		<code><a href="source-class-Aws.Common.Client.ClientBuilder.html#395-416" title="Go to source code">getDefaultEndpointProvider</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the default <code><a href="class-Aws.Common.Region.EndpointProviderInterface.html">Aws\Common\Region\EndpointProviderInterface</a></code> object</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the default <code><a href="class-Aws.Common.Region.EndpointProviderInterface.html">Aws\Common\Region\EndpointProviderInterface</a></code> object</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Aws.Common.Region.EndpointProviderInterface.html">Aws\Common\Region\EndpointProviderInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateConfigFromDescription" id="_updateConfigFromDescription">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_updateConfigFromDescription">#</a>
+		<code><a href="source-class-Aws.Common.Client.ClientBuilder.html#418-449" title="Go to source code">updateConfigFromDescription</a>( <span><code><a href="class-Guzzle.Common.Collection.html">Guzzle\Common\Collection</a></code> <var>$config</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Update a configuration object from a service description</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Update a configuration object from a service description</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd><code><code><a href="class-Guzzle.Common.Collection.html">Guzzle\Common\Collection</a></code></code><br>$config Config to update</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Aws.Common.Exception.InvalidArgumentException.html">Aws\Common\Exception\InvalidArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addSignature" id="_addSignature">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addSignature">#</a>
+		<code><a href="source-class-Aws.Common.Client.ClientBuilder.html#451-490" title="Go to source code">addSignature</a>( <span><code><a href="class-Guzzle.Service.Description.ServiceDescription.html">Guzzle\Service\Description\ServiceDescription</a></code> <var>$description</var></span>, <span><code><a href="class-Guzzle.Common.Collection.html">Guzzle\Common\Collection</a></code> <var>$config</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Return an appropriate signature object for a a client based on a
+description</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return an appropriate signature object for a a client based on a
+description</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$description</var></dt>
+					<dd><code><code><a href="class-Guzzle.Service.Description.ServiceDescription.html">Guzzle\Service\Description\ServiceDescription</a></code></code><br>$description Description that holds a signature option</dd>
+					<dt><var>$config</var></dt>
+					<dd><code><code><a href="class-Guzzle.Common.Collection.html">Guzzle\Common\Collection</a></code></code><br>$config Configuration options</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Aws.Common.Exception.InvalidArgumentException.html">Aws\Common\Exception\InvalidArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="commonConfigDefaults" id="$commonConfigDefaults">
+		<td class="attributes"><code>
+			protected static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Aws.Common.Client.ClientBuilder.html#47-50" title="Go to source code"><var>$commonConfigDefaults</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(<span class="php-quote">'scheme'</span> =&gt; <span class="php-quote">'https'</span>)</code></td>
+		<td class="description"><div>
+			<a href="#$commonConfigDefaults" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Default client config</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Default client config</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="commonConfigRequirements" id="$commonConfigRequirements">
+		<td class="attributes"><code>
+			protected static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Aws.Common.Client.ClientBuilder.html#52-55" title="Go to source code"><var>$commonConfigRequirements</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(Options::SERVICE_DESCRIPTION)</code></td>
+		<td class="description"><div>
+			<a href="#$commonConfigRequirements" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Default client requirements</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Default client requirements</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="defaultEndpointProvider" id="$defaultEndpointProvider">
+		<td class="attributes"><code>
+			protected static 
+			<code><a href="class-Aws.Common.Region.EndpointProviderInterface.html">Aws\Common\Region\EndpointProviderInterface</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Aws.Common.Client.ClientBuilder.html#57-60" title="Go to source code"><var>$defaultEndpointProvider</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$defaultEndpointProvider" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Default region/service endpoint provider</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Default region/service endpoint provider</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="clientNamespace" id="$clientNamespace">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Aws.Common.Client.ClientBuilder.html#62-65" title="Go to source code"><var>$clientNamespace</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$clientNamespace" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The namespace of the client</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The namespace of the client</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="config" id="$config">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Aws.Common.Client.ClientBuilder.html#67-70" title="Go to source code"><var>$config</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$config" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The config options</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The config options</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="configDefaults" id="$configDefaults">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Aws.Common.Client.ClientBuilder.html#72-75" title="Go to source code"><var>$configDefaults</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$configDefaults" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The config defaults</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The config defaults</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="configRequirements" id="$configRequirements">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Aws.Common.Client.ClientBuilder.html#77-80" title="Go to source code"><var>$configRequirements</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$configRequirements" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The config requirements</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The config requirements</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="credentialsResolver" id="$credentialsResolver">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Aws.Common.Client.CredentialsOptionResolver.html">Aws\Common\Client\CredentialsOptionResolver</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Aws.Common.Client.ClientBuilder.html#82-85" title="Go to source code"><var>$credentialsResolver</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$credentialsResolver" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The resolver for credentials</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The resolver for credentials</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="clientResolvers" id="$clientResolvers">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Aws.Common.Client.ClientBuilder.html#87-90" title="Go to source code"><var>$clientResolvers</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$clientResolvers" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>An array of client resolvers</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>An array of client resolvers</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="exceptionParser" id="$exceptionParser">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Aws.Common.Exception.Parser.ExceptionParserInterface.html">Aws\Common\Exception\Parser\ExceptionParserInterface</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Aws.Common.Client.ClientBuilder.html#92-95" title="Go to source code"><var>$exceptionParser</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$exceptionParser" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The Parser interface for the client</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The Parser interface for the client</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="iteratorsConfig" id="$iteratorsConfig">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Aws.Common.Client.ClientBuilder.html#97-100" title="Go to source code"><var>$iteratorsConfig</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$iteratorsConfig" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Array of configuration data for iterators available for the client</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Array of configuration data for iterators available for the client</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		YiiAWS API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

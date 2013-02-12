@@ -1,0 +1,1670 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Guzzle\Service\Client | YiiAWS</title>
+
+	<script type="text/javascript" src="resources/combined.js?709491018"></script>
+	<script type="text/javascript" src="elementlist.js?3541143681"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-Aws.html">Aws<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.AutoScaling.html">AutoScaling<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.AutoScaling.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.AutoScaling.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.CloudFront.html">CloudFront<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.CloudFront.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.CloudFront.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.CloudWatch.html">CloudWatch<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.CloudWatch.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.CloudWatch.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.Client.html">Client</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Credentials.html">Credentials</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Exception.html">Exception<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.Exception.Parser.html">Parser</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.Hash.html">Hash</a>
+						</li>
+				<li><a href="namespace-Aws.Common.InstanceMetadata.html">InstanceMetadata<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.InstanceMetadata.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Common.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Common.Region.html">Region</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Signature.html">Signature</a>
+						</li>
+				<li><a href="namespace-Aws.Common.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.DataPipeline.html">DataPipeline<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DataPipeline.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.DataPipeline.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.DynamoDb.html">DynamoDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DynamoDb.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.DynamoDb.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.DynamoDb.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.DynamoDb.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DynamoDb.Model.BatchRequest.html">BatchRequest</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.DynamoDb.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.DynamoDb.Session.LockingStrategy.html">LockingStrategy</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Aws.Ec2.html">Ec2<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Ec2.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Ec2.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.Ec2.Iterator.html">Iterator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.ElasticBeanstalk.html">ElasticBeanstalk<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.ElasticBeanstalk.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.ElasticBeanstalk.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.ElasticLoadBalancing.html">ElasticLoadBalancing<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.ElasticLoadBalancing.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.ElasticTranscoder.html">ElasticTranscoder<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.ElasticTranscoder.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Glacier.html">Glacier<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Glacier.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Glacier.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.Glacier.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Glacier.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Aws.Iam.html">Iam<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Iam.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Iam.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Route53.html">Route53<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Route53.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Route53.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.S3.html">S3<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.S3.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.S3.Exception.html">Exception<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.S3.Exception.Parser.html">Parser</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.S3.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.S3.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.S3.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Aws.Ses.html">Ses<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Ses.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Ses.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.SimpleDb.html">SimpleDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.SimpleDb.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Sns.html">Sns<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Sns.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Sqs.html">Sqs<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Sqs.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Sqs.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Sts.html">Sts<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Sts.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Swf.html">Swf<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Swf.Enum.html">Enum</a>
+						</li>
+				<li><a href="namespace-Aws.Swf.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.AutoScaling.html">AutoScaling<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.AutoScaling.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.CloudFront.html">CloudFront<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.CloudFront.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.CloudFront.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.CloudWatch.html">CloudWatch<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.CloudWatch.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Common.Client.html">Client</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Credentials.html">Credentials</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Exception.html">Exception<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Common.Exception.Parser.html">Parser</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Common.Hash.html">Hash</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.InstanceMetadata.html">InstanceMetadata</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Common.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Common.Region.html">Region</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Signature.html">Signature</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Common.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DataPipeline.html">DataPipeline<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DataPipeline.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.html">DynamoDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Model.BatchRequest.html">BatchRequest</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Session.html">Session<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Session.LockingStrategy.html">LockingStrategy</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.DynamoDb.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Ec2.html">Ec2<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Ec2.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Ec2.Iterator.html">Iterator</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.ElasticBeanstalk.html">ElasticBeanstalk<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.ElasticBeanstalk.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.ElasticLoadBalancing.html">ElasticLoadBalancing<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.ElasticLoadBalancing.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.ElasticTranscoder.html">ElasticTranscoder<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.ElasticTranscoder.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Glacier.html">Glacier<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Glacier.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.Glacier.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Glacier.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Glacier.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Iam.html">Iam<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Iam.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Route53.html">Route53<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Route53.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.S3.html">S3<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.S3.Command.html">Command</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.S3.Integration.html">Integration</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.S3.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Aws.Tests.S3.Model.html">Model<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.S3.Model.MultipartUpload.html">MultipartUpload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.S3.Waiter.html">Waiter</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Ses.html">Ses<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Ses.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.SimpleDb.html">SimpleDb<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.SimpleDb.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Sns.html">Sns<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Sns.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Sqs.html">Sqs<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Sqs.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Sts.html">Sts<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Sts.Integration.html">Integration</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Aws.Tests.Swf.html">Swf<span></span></a>
+						<ul>
+				<li><a href="namespace-Aws.Tests.Swf.Integration.html">Integration</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Composer.html">Composer<span></span></a>
+						<ul>
+				<li><a href="namespace-Composer.Autoload.html">Autoload</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Guzzle.html">Guzzle<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Batch.html">Batch<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Batch.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Common.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Http.html">Http<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Http.Curl.html">Curl</a>
+						</li>
+				<li><a href="namespace-Guzzle.Http.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Http.Message.html">Message</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Inflection.html">Inflection</a>
+						</li>
+				<li><a href="namespace-Guzzle.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Guzzle.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.html">Parser<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Parser.Cookie.html">Cookie</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.Message.html">Message</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.UriTemplate.html">UriTemplate</a>
+						</li>
+				<li><a href="namespace-Guzzle.Parser.Url.html">Url</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Plugin.Async.html">Async</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Backoff.html">Backoff</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Cookie.html">Cookie<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Plugin.Cookie.CookieJar.html">CookieJar</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Cookie.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Plugin.CurlAuth.html">CurlAuth</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.History.html">History</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Md5.html">Md5</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Mock.html">Mock</a>
+						</li>
+				<li><a href="namespace-Guzzle.Plugin.Oauth.html">Oauth</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Guzzle.Service.html">Service<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Service.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Command.html">Command<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Service.Command.Factory.html">Factory</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Command.LocationVisitor.html">LocationVisitor<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Service.Command.LocationVisitor.Request.html">Request</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Command.LocationVisitor.Response.html">Response</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Guzzle.Service.Description.html">Description</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Service.Resource.html">Resource</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Stream.html">Stream</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.html">Tests<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Batch.html">Batch</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Common.html">Common<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Common.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Common.Exception.html">Exception</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Http.html">Http<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Http.Curl.html">Curl</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Http.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Http.Message.html">Message</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Inflection.html">Inflection</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Iterator.html">Iterator</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Message.html">Message</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Mock.html">Mock</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Parser.html">Parser<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Parser.Cookie.html">Cookie</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Parser.Message.html">Message</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Parser.Url.html">Url</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Parsers.html">Parsers<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Parsers.UriTemplate.html">UriTemplate</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.html">Plugin<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Async.html">Async</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Backoff.html">Backoff</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Cookie.html">Cookie<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Cookie.CookieJar.html">CookieJar</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.CurlAuth.html">CurlAuth</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.History.html">History</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Log.html">Log</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Md5.html">Md5</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Mock.html">Mock</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Oauth.html">Oauth</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Plugin.Redirect.html">Redirect</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.html">Service<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Builder.html">Builder</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.html">Command<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.LocationVisitor.html">LocationVisitor<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.LocationVisitor.Request.html">Request</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Command.LocationVisitor.Response.html">Response</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.Description.html">Description</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.html">Mock<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.Command.html">Command<span></span></a>
+						<ul>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.Command.Sub.html">Sub</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.Mock.Model.html">Model</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Service.Resource.html">Resource</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Guzzle.Tests.Stream.html">Stream</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Symfony.html">Symfony<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.html">Component<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.html">EventDispatcher<span></span></a>
+						<ul>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Debug.html">Debug</a>
+						</li>
+				<li><a href="namespace-Symfony.Component.EventDispatcher.Tests.html">Tests</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Guzzle.Service.AbstractConfigLoader.html">AbstractConfigLoader</a></li>
+				<li><a href="class-Guzzle.Service.CachingConfigLoader.html">CachingConfigLoader</a></li>
+				<li class="active"><a href="class-Guzzle.Service.Client.html">Client</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Guzzle.Service.ClientInterface.html">ClientInterface</a></li>
+				<li><a href="class-Guzzle.Service.ConfigLoaderInterface.html">ConfigLoaderInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Guzzle.Service.html" title="Summary of Guzzle\Service"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Client</h1>
+
+
+	<div class="description">
+	
+<p>Client object for executing commands on a web service.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Guzzle.Common.AbstractHasDispatcher.html"><span>Guzzle\Common\AbstractHasDispatcher</span></a>
+			
+			 implements 
+				<a href="class-Guzzle.Common.HasDispatcherInterface.html"><span>Guzzle\Common\HasDispatcherInterface</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-Guzzle.Http.Client.html"><span>Guzzle\Http\Client</span></a>
+			
+			 implements 
+				<a href="class-Guzzle.Http.ClientInterface.html"><span>Guzzle\Http\ClientInterface</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Guzzle\Service\Client</span></b>			
+			 implements 
+				<a href="class-Guzzle.Service.ClientInterface.html"><span>Guzzle\Service\ClientInterface</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Aws.Common.Client.AbstractClient.html">Aws\Common\Client\AbstractClient</a>, 
+			<a href="class-Guzzle.Tests.Service.Mock.MockClient.html">Guzzle\Tests\Service\Mock\MockClient</a>
+	</div>
+
+	<div>
+		<h4>Indirect known subclasses</h4>
+			<a href="class-Aws.AutoScaling.AutoScalingClient.html">Aws\AutoScaling\AutoScalingClient</a>, 
+			<a href="class-Aws.CloudFront.CloudFrontClient.html">Aws\CloudFront\CloudFrontClient</a>, 
+			<a href="class-Aws.ElasticTranscoder.ElasticTranscoderClient.html">Aws\ElasticTranscoder\ElasticTranscoderClient</a>, 
+			<a href="class-Aws.Glacier.GlacierClient.html">Aws\Glacier\GlacierClient</a>, 
+			<a href="class-Aws.Iam.IamClient.html">Aws\Iam\IamClient</a>, 
+			<a href="class-Aws.Route53.Route53Client.html">Aws\Route53\Route53Client</a>, 
+			<a href="class-Aws.S3.S3Client.html">Aws\S3\S3Client</a>, 
+			<a href="class-Aws.Ses.SesClient.html">Aws\Ses\SesClient</a>, 
+			<a href="class-Aws.SimpleDb.SimpleDbClient.html">Aws\SimpleDb\SimpleDbClient</a>, 
+			<a href="class-Aws.Sns.SnsClient.html">Aws\Sns\SnsClient</a>, 
+			<a href="class-Aws.Sqs.SqsClient.html">Aws\Sqs\SqsClient</a>, 
+			<a href="class-Aws.Sts.StsClient.html">Aws\Sts\StsClient</a>, 
+			<a href="class-Aws.CloudWatch.CloudWatchClient.html">Aws\CloudWatch\CloudWatchClient</a>, 
+			<a href="class-Aws.Swf.SwfClient.html">Aws\Swf\SwfClient</a>, 
+			<a href="class-Aws.Common.Client.DefaultClient.html">Aws\Common\Client\DefaultClient</a>, 
+			<a href="class-Aws.Common.InstanceMetadata.InstanceMetadataClient.html">Aws\Common\InstanceMetadata\InstanceMetadataClient</a>, 
+			<a href="class-Aws.DataPipeline.DataPipelineClient.html">Aws\DataPipeline\DataPipelineClient</a>, 
+			<a href="class-Aws.DynamoDb.DynamoDbClient.html">Aws\DynamoDb\DynamoDbClient</a>, 
+			<a href="class-Aws.Ec2.Ec2Client.html">Aws\Ec2\Ec2Client</a>, 
+			<a href="class-Aws.ElasticBeanstalk.ElasticBeanstalkClient.html">Aws\ElasticBeanstalk\ElasticBeanstalkClient</a>, 
+			<a href="class-Aws.ElasticLoadBalancing.ElasticLoadBalancingClient.html">Aws\ElasticLoadBalancing\ElasticLoadBalancingClient</a>
+	</div>
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Guzzle.html">Guzzle</a>\<a href="namespace-Guzzle.Service.html">Service</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-Guzzle.Service.Client.html#23-376" title="Go to source code">aws-sdk/vendor/guzzle/guzzle/src/Guzzle/Service/Client.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="factory" id="_factory">
+
+		<td class="attributes"><code>
+			 public static
+			<code><a href="class-Guzzle.Service.Client.html">Guzzle\Service\Client</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_factory">#</a>
+		<code><a href="source-class-Guzzle.Service.Client.html#55-65" title="Go to source code">factory</a>( <span>array|<code><a href="class-Guzzle.Common.Collection.html">Guzzle\Common\Collection</a></code> <var>$config</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Basic factory method to create a new client. Extend this method in subclasses
+to build more complex clients.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Basic factory method to create a new client. Extend this method in subclasses
+to build more complex clients.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd><code>array|<code><a href="class-Guzzle.Common.Collection.html">Guzzle\Common\Collection</a></code></code><br>$config Configuration data</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Service.Client.html">Guzzle\Service\Client</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Guzzle.Common.FromConfigInterface.html#_factory">Guzzle\Common\FromConfigInterface::factory()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAllEvents" id="_getAllEvents">
+
+		<td class="attributes"><code>
+			 public static
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAllEvents">#</a>
+		<code><a href="source-class-Guzzle.Service.Client.html#67-78" title="Go to source code">getAllEvents</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get a list of all of the events emitted from the class</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get a list of all of the events emitted from the class</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Guzzle.Http.Client.html#_getAllEvents">Guzzle\Http\Client::getAllEvents()</a></code></div>
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Guzzle.Common.HasDispatcherInterface.html#_getAllEvents">Guzzle\Common\HasDispatcherInterface::getAllEvents()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__call" id="___call">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___call">#</a>
+		<code><a href="source-class-Guzzle.Service.Client.html#80-96" title="Go to source code">__call</a>( <span>string <var>$method</var></span>, <span>array <var>$args</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Magic method used to retrieve a command. Magic methods must be enabled on the
+client to use this functionality.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Magic method used to retrieve a command. Magic methods must be enabled on the
+client to use this functionality.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$method</var></dt>
+					<dd><code>string</code><br>$method Name of the command object to instantiate</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br>$args Arguments to pass to the command</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>Returns the result of the command<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Common.Exception.BadMethodCallException.html">Guzzle\Common\Exception\BadMethodCallException</a></code></code><br>when a command is not found or magic methods are disabled<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="enableMagicMethods" id="_enableMagicMethods">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Guzzle.Service.Client.html">Guzzle\Service\Client</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_enableMagicMethods">#</a>
+		<code><a href="source-class-Guzzle.Service.Client.html#98-110" title="Go to source code">enableMagicMethods</a>( <span>boolean <var>$isEnabled</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Specify whether or not magic methods are enabled (disabled by default)</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Specify whether or not magic methods are enabled (disabled by default)</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$isEnabled</var></dt>
+					<dd><code>boolean</code><br>$isEnabled Set to true to enable magic methods or false to disable them</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Service.Client.html">Guzzle\Service\Client</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCommand" id="_getCommand">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Guzzle.Service.Command.CommandInterface.html">Guzzle\Service\Command\CommandInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCommand">#</a>
+		<code><a href="source-class-Guzzle.Service.Client.html#112-148" title="Go to source code">getCommand</a>( <span>string <var>$name</var></span>, <span>array <var>$args</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Get a command by name. First, the client will see if it has a service
+description and if the service description defines a command by the supplied
+name. If no dynamic command is found, the client will look for a concrete
+command class exists matching the name supplied. If neither are found, an
+InvalidArgumentException is thrown.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get a command by name. First, the client will see if it has a service
+description and if the service description defines a command by the supplied
+name. If no dynamic command is found, the client will look for a concrete
+command class exists matching the name supplied. If neither are found, an
+InvalidArgumentException is thrown.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name Name of the command to retrieve</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br>$args Arguments to pass to the command</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Service.Command.CommandInterface.html">Guzzle\Service\Command\CommandInterface</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Common.Exception.InvalidArgumentException.html">Guzzle\Common\Exception\InvalidArgumentException</a></code></code><br>if no command can be found by name<br />
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Guzzle.Service.ClientInterface.html#_getCommand">Guzzle\Service\ClientInterface::getCommand()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCommandFactory" id="_setCommandFactory">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Guzzle.Service.Client.html">Guzzle\Service\Client</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCommandFactory">#</a>
+		<code><a href="source-class-Guzzle.Service.Client.html#150-162" title="Go to source code">setCommandFactory</a>( <span><code><a href="class-Guzzle.Service.Command.Factory.FactoryInterface.html">Guzzle\Service\Command\Factory\FactoryInterface</a></code> <var>$factory</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the command factory used to create commands by name</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the command factory used to create commands by name</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$factory</var></dt>
+					<dd><code><code><a href="class-Guzzle.Service.Command.Factory.FactoryInterface.html">Guzzle\Service\Command\Factory\FactoryInterface</a></code></code><br>$factory Command factory</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Service.Client.html">Guzzle\Service\Client</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Guzzle.Service.ClientInterface.html#_setCommandFactory">Guzzle\Service\ClientInterface::setCommandFactory()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setResourceIteratorFactory" id="_setResourceIteratorFactory">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Guzzle.Service.Client.html">Guzzle\Service\Client</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setResourceIteratorFactory">#</a>
+		<code><a href="source-class-Guzzle.Service.Client.html#164-176" title="Go to source code">setResourceIteratorFactory</a>( <span><code><a href="class-Guzzle.Service.Resource.ResourceIteratorFactoryInterface.html">Guzzle\Service\Resource\ResourceIteratorFactoryInterface</a></code> <var>$factory</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the resource iterator factory associated with the client</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the resource iterator factory associated with the client</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$factory</var></dt>
+					<dd><code><code><a href="class-Guzzle.Service.Resource.ResourceIteratorFactoryInterface.html">Guzzle\Service\Resource\ResourceIteratorFactoryInterface</a></code></code><br>$factory Resource iterator factory</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Service.Client.html">Guzzle\Service\Client</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Guzzle.Service.ClientInterface.html#_setResourceIteratorFactory">Guzzle\Service\ClientInterface::setResourceIteratorFactory()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getIterator" id="_getIterator">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Guzzle.Service.Resource.ResourceIteratorInterface.html">Guzzle\Service\Resource\ResourceIteratorInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getIterator">#</a>
+		<code><a href="source-class-Guzzle.Service.Client.html#178-194" title="Go to source code">getIterator</a>( <span>string|<code><a href="class-Guzzle.Service.Command.CommandInterface.html">Guzzle\Service\Command\CommandInterface</a></code> <var>$command</var></span>, <span>array <var>$commandOptions</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$iteratorOptions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Get a resource iterator from the client.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get a resource iterator from the client.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$command</var></dt>
+					<dd><code>string|<code><a href="class-Guzzle.Service.Command.CommandInterface.html">Guzzle\Service\Command\CommandInterface</a></code></code><br>$command Command class or command name.</dd>
+					<dt><var>$commandOptions</var></dt>
+					<dd><code>array</code><br>$commandOptions Command options used when creating commands.</dd>
+					<dt><var>$iteratorOptions</var></dt>
+					<dd><code>array</code><br>$iteratorOptions Iterator options passed to the iterator when it is
+instantiated.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Service.Resource.ResourceIteratorInterface.html">Guzzle\Service\Resource\ResourceIteratorInterface</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Guzzle.Service.ClientInterface.html#_getIterator">Guzzle\Service\ClientInterface::getIterator()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="execute" id="_execute">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_execute">#</a>
+		<code><a href="source-class-Guzzle.Service.Client.html#196-263" title="Go to source code">execute</a>( <span><code><a href="class-Guzzle.Service.Command.CommandInterface.html">Guzzle\Service\Command\CommandInterface</a></code>|array <var>$command</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Execute one or more commands</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Execute one or more commands</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$command</var></dt>
+					<dd><code><code><a href="class-Guzzle.Service.Command.CommandInterface.html">Guzzle\Service\Command\CommandInterface</a></code>|array</code><br>$command Command or array of commands to execute</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>Returns the result of the executed command or an array of commands if executing
+multiple commands<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Common.Exception.InvalidArgumentException.html">Guzzle\Common\Exception\InvalidArgumentException</a></code></code><br>if an invalid command is passed<br />
+					<code><code><a href="class-Guzzle.Service.Exception.CommandTransferException.html">Guzzle\Service\Exception\CommandTransferException</a></code></code><br>if an exception is encountered when transferring multiple commands<br />
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Guzzle.Service.ClientInterface.html#_execute">Guzzle\Service\ClientInterface::execute()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDescription" id="_setDescription">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Guzzle.Service.Client.html">Guzzle\Service\Client</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDescription">#</a>
+		<code><a href="source-class-Guzzle.Service.Client.html#265-303" title="Go to source code">setDescription</a>( <span><code><a href="class-Guzzle.Service.Description.ServiceDescription.html">Guzzle\Service\Description\ServiceDescription</a></code> <var>$service</var></span>, <span>boolean <var>$updateFactory</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the service description of the client</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the service description of the client</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$service</var></dt>
+					<dd><code><code><a href="class-Guzzle.Service.Description.ServiceDescription.html">Guzzle\Service\Description\ServiceDescription</a></code></code><br>$service Service description</dd>
+					<dt><var>$updateFactory</var></dt>
+					<dd><code>boolean</code><br>$updateFactory Set to false to not update the service description based command
+factory if it is not already on the client.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Service.Client.html">Guzzle\Service\Client</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Guzzle.Service.ClientInterface.html#_setDescription">Guzzle\Service\ClientInterface::setDescription()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDescription" id="_getDescription">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Guzzle.Service.Description.ServiceDescription.html">Guzzle\Service\Description\ServiceDescription</a></code>|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDescription">#</a>
+		<code><a href="source-class-Guzzle.Service.Client.html#305-313" title="Go to source code">getDescription</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the service description of the client</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the service description of the client</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Service.Description.ServiceDescription.html">Guzzle\Service\Description\ServiceDescription</a></code>|null</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Guzzle.Service.ClientInterface.html#_getDescription">Guzzle\Service\ClientInterface::getDescription()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setInflector" id="_setInflector">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Guzzle.Service.Client.html">Guzzle\Service\Client</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setInflector">#</a>
+		<code><a href="source-class-Guzzle.Service.Client.html#315-327" title="Go to source code">setInflector</a>( <span><code><a href="class-Guzzle.Inflection.InflectorInterface.html">Guzzle\Inflection\InflectorInterface</a></code> <var>$inflector</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the inflector used with the client</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the inflector used with the client</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$inflector</var></dt>
+					<dd><code><code><a href="class-Guzzle.Inflection.InflectorInterface.html">Guzzle\Inflection\InflectorInterface</a></code></code><br>$inflector Inflection object</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Service.Client.html">Guzzle\Service\Client</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Guzzle.Service.ClientInterface.html#_setInflector">Guzzle\Service\ClientInterface::setInflector()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getInflector" id="_getInflector">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Guzzle.Inflection.InflectorInterface.html">Guzzle\Inflection\InflectorInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getInflector">#</a>
+		<code><a href="source-class-Guzzle.Service.Client.html#329-341" title="Go to source code">getInflector</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the inflector used with the client</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the inflector used with the client</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Inflection.InflectorInterface.html">Guzzle\Inflection\InflectorInterface</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Guzzle.Service.ClientInterface.html#_getInflector">Guzzle\Service\ClientInterface::getInflector()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getResourceIteratorFactory" id="_getResourceIteratorFactory">
+
+		<td class="attributes"><code>
+			 protected 
+			<code><a href="class-Guzzle.Service.Resource.ResourceIteratorFactoryInterface.html">Guzzle\Service\Resource\ResourceIteratorFactoryInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getResourceIteratorFactory">#</a>
+		<code><a href="source-class-Guzzle.Service.Client.html#343-361" title="Go to source code">getResourceIteratorFactory</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the resource iterator factory associated with the client</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the resource iterator factory associated with the client</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Service.Resource.ResourceIteratorFactoryInterface.html">Guzzle\Service\Resource\ResourceIteratorFactoryInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCommandFactory" id="_getCommandFactory">
+
+		<td class="attributes"><code>
+			 protected 
+			<code><a href="class-Guzzle.Service.Command.Factory.FactoryInterface.html">Guzzle\Service\Command\Factory\FactoryInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCommandFactory">#</a>
+		<code><a href="source-class-Guzzle.Service.Client.html#363-375" title="Go to source code">getCommandFactory</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the command factory associated with the client</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the command factory associated with the client</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Guzzle.Service.Command.Factory.FactoryInterface.html">Guzzle\Service\Command\Factory\FactoryInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Guzzle.Http.Client.html#methods">Guzzle\Http\Client</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Guzzle.Http.Client.html#___construct">__construct()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_createRequest">createRequest()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_delete">delete()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_expandTemplate">expandTemplate()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_get">get()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_getBaseUrl">getBaseUrl()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_getConfig">getConfig()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_getCurlMulti">getCurlMulti()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_getDefaultHeaders">getDefaultHeaders()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_getUriTemplate">getUriTemplate()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_head">head()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_options">options()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_patch">patch()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_post">post()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_prepareRequest">prepareRequest()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_put">put()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_send">send()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_setBaseUrl">setBaseUrl()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_setConfig">setConfig()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_setCurlMulti">setCurlMulti()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_setDefaultHeaders">setDefaultHeaders()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_setRequestFactory">setRequestFactory()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_setSslVerification">setSslVerification()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_setUriTemplate">setUriTemplate()</a>, 
+			<a href="class-Guzzle.Http.Client.html#_setUserAgent">setUserAgent()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Guzzle.Common.AbstractHasDispatcher.html#methods">Guzzle\Common\AbstractHasDispatcher</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Guzzle.Common.AbstractHasDispatcher.html#_addSubscriber">addSubscriber()</a>, 
+			<a href="class-Guzzle.Common.AbstractHasDispatcher.html#_dispatch">dispatch()</a>, 
+			<a href="class-Guzzle.Common.AbstractHasDispatcher.html#_getEventDispatcher">getEventDispatcher()</a>, 
+			<a href="class-Guzzle.Common.AbstractHasDispatcher.html#_setEventDispatcher">setEventDispatcher()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="COMMAND_PARAMS" id="COMMAND_PARAMS">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-Guzzle.Service.Client.html#28" title="Go to source code"><b>COMMAND_PARAMS</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'command.params'</span></code></td>
+		<td class="description"><div>
+			<a href="#COMMAND_PARAMS" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-Guzzle.Http.Client.html#constants">Guzzle\Http\Client</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Guzzle.Http.Client.html#CURL_OPTIONS"><b>CURL_OPTIONS</b></a>, 
+			<a href="class-Guzzle.Http.Client.html#DISABLE_REDIRECTS"><b>DISABLE_REDIRECTS</b></a>, 
+			<a href="class-Guzzle.Http.Client.html#REQUEST_PARAMS"><b>REQUEST_PARAMS</b></a>, 
+			<a href="class-Guzzle.Http.Client.html#SSL_CERT_AUTHORITY"><b>SSL_CERT_AUTHORITY</b></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-Guzzle.Http.ClientInterface.html#constants">Guzzle\Http\ClientInterface</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Guzzle.Http.ClientInterface.html#CREATE_REQUEST"><b>CREATE_REQUEST</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="serviceDescription" id="$serviceDescription">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Guzzle.Service.Description.ServiceDescription.html">Guzzle\Service\Description\ServiceDescription</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Guzzle.Service.Client.html#30-33" title="Go to source code"><var>$serviceDescription</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$serviceDescription" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Description of the service and possible commands</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Description of the service and possible commands</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="enableMagicMethods" id="$enableMagicMethods">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Guzzle.Service.Client.html#35-38" title="Go to source code"><var>$enableMagicMethods</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">true</span></code></td>
+		<td class="description"><div>
+			<a href="#$enableMagicMethods" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Whether or not magic methods are enabled</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Whether or not magic methods are enabled</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="commandFactory" id="$commandFactory">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Guzzle.Service.Command.Factory.FactoryInterface.html">Guzzle\Service\Command\Factory\FactoryInterface</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Guzzle.Service.Client.html#40-43" title="Go to source code"><var>$commandFactory</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$commandFactory" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="resourceIteratorFactory" id="$resourceIteratorFactory">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Guzzle.Service.Resource.ResourceIteratorFactoryInterface.html">Guzzle\Service\Resource\ResourceIteratorFactoryInterface</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Guzzle.Service.Client.html#45-48" title="Go to source code"><var>$resourceIteratorFactory</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$resourceIteratorFactory" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="inflector" id="$inflector">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Guzzle.Inflection.InflectorInterface.html">Guzzle\Inflection\InflectorInterface</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Guzzle.Service.Client.html#50-53" title="Go to source code"><var>$inflector</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$inflector" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Inflector associated with the service/client</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Inflector associated with the service/client</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Guzzle.Http.Client.html#properties">Guzzle\Http\Client</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Guzzle.Http.Client.html#$defaultHeaders"><var>$defaultHeaders</var></a>, 
+			<a href="class-Guzzle.Http.Client.html#$requestFactory"><var>$requestFactory</var></a>, 
+			<a href="class-Guzzle.Http.Client.html#$userAgent"><var>$userAgent</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Guzzle.Common.AbstractHasDispatcher.html#properties">Guzzle\Common\AbstractHasDispatcher</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Guzzle.Common.AbstractHasDispatcher.html#$eventDispatcher"><var>$eventDispatcher</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		YiiAWS API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
