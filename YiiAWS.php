@@ -50,7 +50,7 @@ class YiiAWS extends CApplicationComponent {
         $this->aws = Aws\S3\S3Client::factory($config);
         
         print_r($this->aws);
-        
+        app()->end();
     }
  
     
