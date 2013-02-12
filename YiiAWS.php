@@ -11,7 +11,7 @@
  * @version 1.0.0
  * 
  * @package YiiAMQP
- */
+ **/
 require __DIR__.'/aws.phar';
 
 Yii::app()->autoloader->getAutoloader()->addNamespace('Aws\S3', __DIR__ . '/aws-sdk/src/Aws/S3');
@@ -82,7 +82,7 @@ Yii::app()->autoloader->getAutoloader()->addNamespace('Aws\S3', __DIR__ . '/aws-
  * @method waitUntilBucketNotExists(array $input) Wait until a bucket does not exist. The input array uses the parameters of the HeadBucket operation and waiter specific settings
  * @method waitUntilObjectExists(array $input) Wait until an object exists. The input array uses the parameters of the HeadObject operation and waiter specific settings
  */
- */
+
 class YiiAWS extends CApplicationComponent {
 
     public $key;
