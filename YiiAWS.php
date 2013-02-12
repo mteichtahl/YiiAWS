@@ -32,6 +32,14 @@ use Aws\S3\S3Client as S3ClientV2;
 class YiiAWS extends CApplicationComponent {
 
     public $key;
+    public $secret;
+    public $region;
+    
+    protected $aws = NULL;
+    
+    function __construct() {
+        $this->aws = S3ClientV2::factory($config);;
+    }
     
     public function  test()
     {
