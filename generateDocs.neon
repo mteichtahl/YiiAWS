@@ -7,15 +7,15 @@ extensions: [php]
 # Mask to exclude file or directory from processing
 exclude: '*wift*,images, docs, www, asset, assets, tests'
 # Don't generate documentation for classes from file or directory with this mask
-skipDocPath: [phpAmqpLib*]
+skipDocPath: 
 # Don't generate documentation for classes with this name prefix
-skipDocPrefix: PhpAmqpLib
+skipDocPrefix:
 # Character set of source files
 charset: auto
 # Main project name prefix
 main:
 # Title of generated documentation
-title: 'YiiAMP'
+title: 'YiiAWS'
 # Documentation base URL
 baseUrl:
 # Google Custom Search ID
