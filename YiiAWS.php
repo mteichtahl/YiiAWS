@@ -128,7 +128,7 @@ class YiiAWS extends CApplicationComponent {
             // We couldnt create it so throw an exception
             throw new CHttpException(404,'Could not create AWS Service.');
         }        
-        return $this->aws;
+        return Aws\S3\S3Client::$this->aws;
     }
 
 }
