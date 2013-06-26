@@ -1,5 +1,10 @@
 {
+    "name" : "amplifier/yii-aws",
+    "type": "library",
+    "description": "AWS adapter for Yii",
+    "license": "MIT",
     "require": {
+        "php" : ">=5.4.0",
         "aws/aws-sdk-php": "2.*"
     }
 }
